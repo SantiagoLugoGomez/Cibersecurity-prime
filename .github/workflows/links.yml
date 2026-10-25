@@ -1,0 +1,27 @@
+name: Check links
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 6 * * 1"
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check external and internal links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --max-concurrency 4
+            --timeout 30
+            --retry-wait-time 5
+            --accept 200,206,429
+            --exclude-path private
+            --exclude '^http://10\.'
+            --exclude 'example\.com'
+            "**/*.md"
+          fail: true

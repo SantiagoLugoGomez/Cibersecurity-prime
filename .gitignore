@@ -1,0 +1,22 @@
+# Private notes and solutions to active, graded or exam content. Never commit these.
+private/
+
+# Local lab artifacts
+*.ova
+*.vmdk
+*.vdi
+*.pcap
+*.pcapng
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
