@@ -10,29 +10,31 @@ A roadmap only works if it fits a real week. You are carrying a full engineering
 - **Protect one rest day.** A day with no security work is part of the plan, not a failure.
 - **Write as you go.** Every solve gets a writeup within 48 hours, or it did not really happen.
 
-## Semester plan (sustainable): 6 to 8 hours per week
+## Semester plan (sustainable): about 7.5 hours per week
 
-This assumes a normal week during the semester. It overlaps on purpose with your courses (see [degree-connections.md](degree-connections.md)) so the two reinforce each other.
+This maps the four weekly sessions from the [roadmap format](roadmap/README.md#the-weekly-session-format) (R, P, D, E) onto real days, plus a short review slot and 10 minutes of flashcards most days. It overlaps on purpose with your courses (see [degree-connections.md](degree-connections.md)) so the two reinforce each other.
 
-| Day | Time | Focus |
-|---|---|---|
-| Monday | 1 hour | Reading: a resource from the current phase, or a professional text ([english/reading-professional-material.md](english/reading-professional-material.md)) |
-| Tuesday | rest or overflow | No security work by default |
-| Wednesday | 1.5 hours | Hands-on: labs or challenges for the current phase |
-| Thursday | 1 hour | English for the field ([english/](english/README.md)): glossary, listening or speaking |
-| Friday | rest or overflow | No security work by default |
-| Saturday | 2.5 to 3 hours | Main hands-on block: a machine, a set of labs, or a project |
-| Sunday | 0.5 to 1 hour | Writeup of the week's work and plan the next week; update [progress.md](progress.md) |
+| Day | Session | Time | Focus |
+|---|---|---|---|
+| Monday | R | 75 min | Read and study the week's material; write flashcards |
+| Tuesday | rest or flashcards only | 10 min | Spaced-repetition review |
+| Wednesday | P | 90 min | Guided practice: labs, levels, drills |
+| Thursday | E | 60 min | English on the week's topic ([english/](english/README.md)) |
+| Friday | rest or flashcards only | 10 min | Spaced-repetition review |
+| Saturday | D | 3 h | Deep practice: a machine, build, tool or investigation, ending in a writeup |
+| Sunday | review | 30-45 min | Answer check-yourself questions, commit the deliverable, update [progress.md](progress.md), plan next week ([weekly-review template](templates/weekly-review.md)) |
+
+Do 10 minutes of flashcards on as many days as you can; it is the highest-return habit. How to run each session well is in [study-system.md](study-system.md).
 
 **Weekly checklist**
 
-- [ ] One reading block done and noted
-- [ ] One substantial hands-on block done
-- [ ] One English block done
-- [ ] One writeup or project update committed to the repo
-- [ ] [progress.md](progress.md) updated
+- [ ] R, P, D and E sessions done
+- [ ] Daily-ish flashcard reviews
+- [ ] Check-yourself questions answered from memory
+- [ ] Deliverable committed
+- [ ] [progress.md](progress.md) updated and next week planned
 
-**During exam weeks (maintenance, about 2 hours):** keep only the Monday reading hour and one 1-hour English block. Everything else pauses. Do not break the habit entirely; a very light week is easier to recover from than a full stop.
+**During exam weeks (maintenance, about 2 hours):** keep only the R (read) session and daily flashcards. Pause P, D and E, and let the schedule slide by a week rather than skipping a deliverable. A very light week is easier to recover from than a full stop.
 
 ## Break plan (intensive): 25 to 35 hours per week
 

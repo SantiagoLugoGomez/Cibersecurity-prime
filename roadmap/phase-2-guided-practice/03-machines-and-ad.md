@@ -2,7 +2,7 @@
 
 Full-machine compromise is the skill most people mean by "hacking": enumerate a host you have never seen, find a way in, and escalate to full control. This module builds it on Linux, Windows and a small Active Directory.
 
-**Main resources:** [TryHackMe](https://tryhackme.com/) free rooms and [Hack The Box](https://www.hackthebox.com/) (free tier plus Academy Student plan), [IppSec](https://ippsec.rocks/) video index, [HackTricks](https://book.hacktricks.wiki/), [GTFOBins](https://gtfobins.github.io/), [LOLBAS](https://lolbas-project.github.io/).
+**Main resources:** [TryHackMe](https://tryhackme.com/) free rooms and [Hack The Box](https://www.hackthebox.com/) (free tier plus Academy Student plan), [IppSec](https://ippsec.rocks/) video index, [HackTricks](https://book.hacktricks.xyz/), [GTFOBins](https://gtfobins.github.io/), [LOLBAS](https://lolbas-project.github.io/).
 
 **Rule:** only retired HTB machines may be written up publicly. Keep active-machine notes in your private repo.
 

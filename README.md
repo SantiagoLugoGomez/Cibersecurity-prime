@@ -26,11 +26,13 @@ Every resource, price and link was verified in October 2026. Prices and versions
 
 | Phase | Focus | Duration | Outcome |
 |---|---|---|---|
-| [Phase 0](roadmap/phase-0-foundations/README.md) | Foundations: Linux, networking, Python, Git, operating systems | ~14 weeks | You can work in a terminal, read a capture, script, and use Git daily |
-| [Phase 1](roadmap/phase-1-security-fundamentals/README.md) | Security fundamentals: CIA, cryptography, auth, OWASP Top 10:2025, ATT&CK, NIST CSF 2.0 | ~12 weeks | You can reason about how systems fail and which control stops each failure |
-| [Phase 2](roadmap/phase-2-guided-practice/README.md) | Guided practice: CTFs, wargames, web and network labs | ~16 weeks | You can solve easy machines and challenges and write them up professionally |
-| [Phase 3](roadmap/phase-3-specialization/README.md) | Specialization: offensive, defensive, web, malware, cloud, GRC | ~20 weeks | You have sampled every track and chosen one, with a deep-dive project |
-| [Phase 4](roadmap/phase-4-professional/README.md) | Professional level: certifications, projects, bug bounty, community | 12-24 months | You have evidence employers hire on: certs, projects, findings, visibility |
+| [Phase 0](roadmap/phase-0-foundations/README.md) | Foundations: Linux, networking, Python, Git, operating systems, Windows | 18 weeks | You can work in a terminal, read a capture, script, and use Git daily |
+| [Phase 1](roadmap/phase-1-security-fundamentals/README.md) | Security fundamentals: CIA, cryptography, auth, OWASP Top 10:2025, ATT&CK, NIST CSF 2.0, governance | 16 weeks | You can reason about how systems fail and which control stops each failure |
+| [Phase 2](roadmap/phase-2-guided-practice/README.md) | Guided practice: CTFs, wargames, web and network labs, machines, AD, blue team | 20 weeks | You can solve easy machines and challenges and write them up professionally |
+| [Phase 3](roadmap/phase-3-specialization/README.md) | Specialization: offensive, defensive, web, malware, cloud, GRC, each with a 12-week deep dive | 24 weeks | You have sampled every track and chosen one, with a deep-dive capstone |
+| [Phase 4](roadmap/phase-4-professional/README.md) | Professional level: certifications, projects, bug bounty, community, career | 12-24 months | You have evidence employers hire on: certs, projects, findings, visibility |
+
+Every week across Phases 0 to 2, and the Phase 3 deep dives, is laid out as four fixed sessions (read, guided practice, deep practice, English) with check-yourself questions and a concrete deliverable. See [roadmap/README.md](roadmap/README.md) for the format and [study-system.md](study-system.md) for how to run it.
 
 ```mermaid
 flowchart TD
@@ -47,15 +49,18 @@ flowchart TD
 
 | Path | What it holds |
 |---|---|
-| [roadmap/](roadmap/) | The five phases, one folder each; Phase 0 includes runnable exercises |
+| [roadmap/](roadmap/README.md) | The five phases as week-by-week modules; Phase 0 includes runnable exercises |
+| [study-system.md](study-system.md) | How to run the sessions, take notes, use flashcards and review |
+| [reading-list.md](reading-list.md) | Every resource in one place, free-first, with when to use it |
+| [templates/](templates/) | Weekly note and weekly review templates |
 | [degree-connections.md](degree-connections.md) | How your courses map to security, with exercises |
 | [homelab/](homelab/README.md) | Home lab build guide, network diagram and helper scripts |
 | [writeups/](writeups/) | Writeup template, a complete worked example, and your own writeups |
 | [english/](english/README.md) | Glossary, reading method, report writing, speaking and listening |
-| [legal-and-ethics.md](legal-and-ethics.md) | Colombian law (Ley 1273, Ley 1581), authorized practice, disclosure |
+| [legal-and-ethics.md](legal-and-ethics.md) | Colombian law (Ley 1273, Ley 1581, Ley 1928), authorized practice, disclosure |
 | [community.md](community.md) | Conferences, groups and communities in Colombia, Latin America and online |
 | [weekly-plan.md](weekly-plan.md) | Sustainable semester plan and intensive break plan |
-| [progress.md](progress.md) | Per-phase progress checklists and logs |
+| [progress.md](progress.md) | Per-week progress checklists and logs |
 
 ## Guiding principles
 

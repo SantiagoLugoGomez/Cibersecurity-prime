@@ -2,14 +2,14 @@
 
 Six weeks of structured, progressively harder practice: the OverTheWire wargames to cement Linux and web basics, then a deep pass through the PortSwigger practitioner labs and Juice Shop.
 
-**Main resources:** [OverTheWire](https://overthewire.org/wargames/), [PortSwigger Web Security Academy](https://portswigger.net/web-security), [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/), [HackTricks](https://book.hacktricks.wiki/) and [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) as references.
+**Main resources:** [OverTheWire](https://overthewire.org/wargames/), [PortSwigger Web Security Academy](https://portswigger.net/web-security), [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/), [HackTricks](https://book.hacktricks.xyz/) and [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) as references.
 
 ## Week 5: OverTheWire Bandit finish and Natas start
 
 **Goal:** finish the Linux wargame and begin the web wargame.
 
 **R. Read and study (75 min)**
-- Skim [HackTricks](https://book.hacktricks.wiki/) Linux privilege-escalation checklist to see how professionals organize enumeration.
+- Skim [HackTricks](https://book.hacktricks.xyz/) Linux privilege-escalation checklist to see how professionals organize enumeration.
 - Notes: the Bandit techniques you have met (cron, git, setuid, services), and what Natas will teach (server-side web logic).
 - Flashcards: three privesc checks from HackTricks, what Natas levels are about.
 

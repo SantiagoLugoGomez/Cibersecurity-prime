@@ -6,6 +6,8 @@
 
 This phase is about evidence: certifications that prove practical skill, projects that show you can build and investigate real systems, bug bounty or CTF results, and a visible presence in the community. Employers in Colombia and abroad hire on that evidence.
 
+Your [Phase 3 track deep dive](../phase-3-specialization/README.md#deep-dive-12-weeks) already prepared you for your track's certification and produced your capstone project. This phase is where you sit the exam, build more projects, and run the job search. The full job-search guide, CV and LinkedIn advice, and interview preparation are in [career.md](career.md).
+
 ## Objectives
 
 1. Earn certifications in a logical order, one at a time, each after the hands-on work that justifies it.
@@ -129,6 +131,10 @@ The legal side, including Colombian law and responsible disclosure outside forma
 - Help newer students: mentoring is the fastest way to find the gaps in your own knowledge.
 
 Full list of events and groups: [community.md](../../community.md).
+
+## Finding a job
+
+The job search deserves its own plan: where the roles are in Colombia and remotely, how to turn your portfolio into a CV and LinkedIn profile, how to prepare for technical and behavioral interviews, and a semester-by-semester timeline. It is all in [career.md](career.md).
 
 ## You've mastered this phase when...
 
