@@ -140,13 +140,20 @@ Pick the highest total as primary and a complementary track as secondary. Combin
 - Web security and cloud security
 - GRC and cloud security
 
-## Deep dive (8 weeks)
+## Deep dive (12 weeks)
 
-Spend 8 weeks on the primary track:
+Once you have chosen your primary track, follow its dedicated 12-week curriculum. Each file has the same week-by-week structure as the earlier phases (read, practice, deep practice, English, check-yourself, deliverable) and ends with a capstone project and a "you are ready for the certification when..." checklist.
 
-1. Weeks 1-2: finish the core learning path for the track on one platform (for example the HTB Academy Penetration Tester or SOC Analyst path).
-2. Weeks 3-6: build the portfolio project for the track from [Phase 4](../phase-4-professional/README.md#portfolio-projects).
-3. Weeks 7-8: write it up, publish it in this repo, and present it to classmates or at a local meetup.
+| Track | Deep-dive curriculum |
+|---|---|
+| Offensive | [track-offensive.md](track-offensive.md) |
+| Defensive | [track-defensive.md](track-defensive.md) |
+| Web security | [track-web.md](track-web.md) |
+| Malware analysis | [track-malware.md](track-malware.md) |
+| Cloud security | [track-cloud.md](track-cloud.md) |
+| GRC | [track-grc.md](track-grc.md) |
+
+Every track curriculum lists a free-only path, so none requires paid subscriptions to complete. The matching certifications are in [Phase 4](../phase-4-professional/README.md#stage-3-track-certification-one-in-your-primary-track).
 
 ## You've mastered this phase when...
 

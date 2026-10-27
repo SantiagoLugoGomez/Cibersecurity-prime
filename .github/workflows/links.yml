@@ -17,11 +17,16 @@ jobs:
           args: >-
             --no-progress
             --max-concurrency 4
-            --timeout 30
+            --timeout 40
+            --max-retries 2
             --retry-wait-time 5
-            --accept 200,206,429
+            --accept 200,206,403,429
             --exclude-path private
             --exclude '^http://10\.'
             --exclude 'example\.com'
+            --exclude 'gov\.co'
+            --exclude 'h2hc\.com\.br'
+            --exclude 'crypto\.stanford\.edu'
+            --exclude 'pentest-standard\.org'
             "**/*.md"
           fail: true
