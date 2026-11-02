@@ -10,7 +10,7 @@
 | Hints used | <none / one hint at step X / walkthrough for privesc> |
 | Tags | <e.g. linux, sqli, suid, active-directory> |
 
-> Authorization: this target is a lab or platform that authorizes testing. See [../legal-and-ethics.md](../legal-and-ethics.md). Do not publish writeups for active Hack The Box content or anything a platform's rules forbid sharing.
+> Authorization: this target is a lab or platform that authorizes testing. See [../legal-and-ethics.md](../docs/01-foundations/05-legal-and-ethics.md). Do not publish writeups for active Hack The Box content or anything a platform's rules forbid sharing.
 
 ## Summary
 

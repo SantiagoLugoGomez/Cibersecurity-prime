@@ -74,7 +74,7 @@ Cryptography is where good intentions fail quietly. The goal of this module is n
 - Flashcards: TLS 1.3 handshake steps, forward secrecy, CSPRNG vs PRNG, what ML-KEM is for.
 
 **P. Guided practice (90 min)**
-- In Python, show why `random` is predictable (seed it, reproduce the sequence) and why `secrets` is not. Connect this to the degree's Linear Algebra course: the Mersenne Twister's state is recoverable because it is linear ([degree-connections.md](../../degree-connections.md)).
+- In Python, show why `random` is predictable (seed it, reproduce the sequence) and why `secrets` is not. Connect this to the degree's Linear Algebra course: the Mersenne Twister's state is recoverable because it is linear ([degree-connections.md](../../docs/11-learning-and-career/04-your-degree-and-security.md)).
 - Capture a TLS 1.3 handshake and label every message against the xargs.org walkthrough.
 
 **D. Deep practice (3 h)**

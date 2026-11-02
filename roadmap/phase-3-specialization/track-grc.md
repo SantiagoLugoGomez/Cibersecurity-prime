@@ -3,7 +3,7 @@
 For the student who chose GRC. The work is less hands-on technically, but people who understand the technology behind the controls are far more effective and valued, and your technical phases are exactly that advantage. This curriculum, with its Colombian focus, takes you from the Phase 1 frameworks baseline to producing the real artifacts a GRC analyst or IT auditor delivers.
 
 **Prerequisites:** Phase 1 complete, especially the frameworks and governance module.
-**Main resources:** [NIST CSF 2.0](https://www.nist.gov/cyberframework), [CIS Controls v8.1](https://www.cisecurity.org/controls/v8-1), [ISO/IEC 27001](https://www.iso.org/standard/27001) (overview is free), Colombian regulations (see [legal-and-ethics.md](../../legal-and-ethics.md)), [SANS policy templates](https://www.sans.org/information-security-policy/) (free).
+**Main resources:** [NIST CSF 2.0](https://www.nist.gov/cyberframework), [CIS Controls v8.1](https://www.cisecurity.org/controls/v8-1), [ISO/IEC 27001](https://www.iso.org/standard/27001) (overview is free), Colombian regulations (see [legal-and-ethics.md](../../docs/01-foundations/05-legal-and-ethics.md)), [SANS policy templates](https://www.sans.org/information-security-policy/) (free).
 **Certification target:** ISO/IEC 27001 Lead Implementer or Lead Auditor; later CISA or CISM (see [Phase 4](../phase-4-professional/README.md#stage-3-track-certification-one-in-your-primary-track)).
 
 ## Weeks 1-2: Standards and frameworks in depth

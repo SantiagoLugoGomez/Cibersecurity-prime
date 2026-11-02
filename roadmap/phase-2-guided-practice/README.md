@@ -49,6 +49,6 @@ By the end of this phase you can:
 - [ ] You can triage alerts and investigate a network capture and an endpoint to a written conclusion.
 - [ ] You have a body of writeups and at least one polished incident report and one web assessment, all shareable.
 
-Track these in [progress.md](../../progress.md).
+Track these in [progress.md](../progress.md).
 
 Next: [Phase 3, specialization](../phase-3-specialization/README.md).

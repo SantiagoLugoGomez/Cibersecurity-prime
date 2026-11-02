@@ -2,7 +2,7 @@
 
 Security is also an organizational discipline. This module gives you the frameworks and the risk vocabulary that every role touches, with a Colombian focus so it is relevant where you will work.
 
-**Main resources:** [NIST CSF 2.0](https://www.nist.gov/cyberframework), [CIS Controls v8.1](https://www.cisecurity.org/controls/v8-1), [FIRST (CVSS and EPSS)](https://www.first.org/), [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog), Colombian regulations (see [legal-and-ethics.md](../../legal-and-ethics.md)).
+**Main resources:** [NIST CSF 2.0](https://www.nist.gov/cyberframework), [CIS Controls v8.1](https://www.cisecurity.org/controls/v8-1), [FIRST (CVSS and EPSS)](https://www.first.org/), [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog), Colombian regulations (see [legal-and-ethics.md](../../docs/01-foundations/05-legal-and-ethics.md)).
 
 ## Week 14: Frameworks and controls
 
@@ -69,7 +69,7 @@ Security is also an organizational discipline. This module gives you the framewo
 **Goal:** understand the regulatory and governance environment you will actually work in.
 
 **R. Read and study (75 min)**
-- Re-read [legal-and-ethics.md](../../legal-and-ethics.md) for the Colombian laws.
+- Re-read [legal-and-ethics.md](../../docs/01-foundations/05-legal-and-ethics.md) for the Colombian laws.
 - Read about the Colombian public-sector security model (MinTIC's MSPI, updated in 2025 to align with ISO/IEC 27001:2022) and, for the financial sector, the Superintendencia Financiera's cybersecurity circular (CE 007 de 2018).
 - Notes: what an ISMS and a security policy framework are; the roles of risk owner, control owner and auditor; how Ley 1581 (data protection) and sector rules translate into controls; incident reporting obligations in Colombia.
 - Flashcards: ISMS, MSPI, who enforces Ley 1581, what CE 007 de 2018 requires at a high level.

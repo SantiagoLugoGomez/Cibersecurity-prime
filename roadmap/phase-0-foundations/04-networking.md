@@ -1,6 +1,6 @@
 # Module 0.4: Networking (weeks 6-9)
 
-Every attack and every defense crosses a network. This module takes four weeks because networking is the single most leveraged foundation in security, and because it reinforces the degree's networking course ([degree-connections.md](../../degree-connections.md)).
+Every attack and every defense crosses a network. This module takes four weeks because networking is the single most leveraged foundation in security, and because it reinforces the degree's networking course ([degree-connections.md](../../docs/11-learning-and-career/04-your-degree-and-security.md)).
 
 **Main resources:** [Professor Messer Network+ N10-009](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/) (free videos), [Computer Networking: Principles, Protocols and Practice](https://github.com/CNP3/ebook) (free book, "CNP3"), [High Performance Browser Networking](https://hpbn.co/) (free, "HPBN"), [Wireshark User's Guide](https://www.wireshark.org/docs/wsug_html_chunked/).
 

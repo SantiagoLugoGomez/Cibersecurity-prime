@@ -143,4 +143,4 @@ malnet 10.10.99.0/24 (no router, no host access): REMnux .2 | FLARE-VM .10
 - Keep malware only inside `malnet`, stored in password-protected archives (the common convention is the password `infected`), and never on the host.
 - Update the hypervisor regularly; VM escape vulnerabilities do exist.
 - Take snapshots before any risky change. Use [`scripts/snapshot-all.sh`](scripts/snapshot-all.sh) with VirtualBox.
-- Attack only your own lab, or platforms and programs that authorize it. See [legal-and-ethics.md](../legal-and-ethics.md).
+- Attack only your own lab, or platforms and programs that authorize it. See [legal-and-ethics.md](../docs/01-foundations/05-legal-and-ethics.md).

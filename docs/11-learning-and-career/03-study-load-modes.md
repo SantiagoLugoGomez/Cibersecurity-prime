@@ -12,19 +12,19 @@ A roadmap only works if it fits a real week. You are carrying a full engineering
 
 ## Semester plan (sustainable): about 7.5 hours per week
 
-This maps the four weekly sessions from the [roadmap format](roadmap/README.md#the-weekly-session-format) (R, P, D, E) onto real days, plus a short review slot and 10 minutes of flashcards most days. It overlaps on purpose with your courses (see [degree-connections.md](degree-connections.md)) so the two reinforce each other.
+This maps the four weekly sessions from the [roadmap format](../../roadmap/README.md#the-weekly-session-format) (R, P, D, E) onto real days, plus a short review slot and 10 minutes of flashcards most days. It overlaps on purpose with your courses (see [degree-connections.md](04-your-degree-and-security.md)) so the two reinforce each other.
 
 | Day | Session | Time | Focus |
 |---|---|---|---|
 | Monday | R | 75 min | Read and study the week's material; write flashcards |
 | Tuesday | rest or flashcards only | 10 min | Spaced-repetition review |
 | Wednesday | P | 90 min | Guided practice: labs, levels, drills |
-| Thursday | E | 60 min | English on the week's topic ([english/](english/README.md)) |
+| Thursday | E | 60 min | English on the week's topic ([english/](../../english/README.md)) |
 | Friday | rest or flashcards only | 10 min | Spaced-repetition review |
 | Saturday | D | 3 h | Deep practice: a machine, build, tool or investigation, ending in a writeup |
-| Sunday | review | 30-45 min | Answer check-yourself questions, commit the deliverable, update [progress.md](progress.md), plan next week ([weekly-review template](templates/weekly-review.md)) |
+| Sunday | review | 30-45 min | Answer check-yourself questions, commit the deliverable, update [progress.md](../../roadmap/progress.md), plan next week ([weekly-review template](../../templates/weekly-review.md)) |
 
-Do 10 minutes of flashcards on as many days as you can; it is the highest-return habit. How to run each session well is in [study-system.md](study-system.md).
+Do 10 minutes of flashcards on as many days as you can; it is the highest-return habit. How to run each session well is in [study-system.md](02-the-study-system.md).
 
 **Weekly checklist**
 
@@ -32,7 +32,7 @@ Do 10 minutes of flashcards on as many days as you can; it is the highest-return
 - [ ] Daily-ish flashcard reviews
 - [ ] Check-yourself questions answered from memory
 - [ ] Deliverable committed
-- [ ] [progress.md](progress.md) updated and next week planned
+- [ ] [progress.md](../../roadmap/progress.md) updated and next week planned
 
 **During exam weeks (maintenance, about 2 hours):** keep only the R (read) session and daily flashcards. Pause P, D and E, and let the schedule slide by a week rather than skipping a deliverable. A very light week is easier to recover from than a full stop.
 
@@ -71,6 +71,6 @@ This is a guide, not a contract. Move slower if a semester is heavy; the order m
 ## Staying consistent
 
 - Put the Saturday block in your calendar as a fixed appointment.
-- Track streaks in [progress.md](progress.md); seeing a chain of done weeks is motivating.
+- Track streaks in [progress.md](../../roadmap/progress.md); seeing a chain of done weeks is motivating.
 - If you miss a week, do not try to make it up in one day. Return to the normal plan.
 - Review the plan at the end of each semester and adjust the hours to what actually happened, not what you hoped.

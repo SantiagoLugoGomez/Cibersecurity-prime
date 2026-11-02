@@ -47,6 +47,6 @@ The [`exercises/`](exercises/) folder holds three starter Python scripts (`port_
 - [ ] You can inspect a Windows host from PowerShell, read its Security and Sysmon logs, and map an event to an ATT&CK technique.
 - [ ] Your home lab runs end to end: an attack from Kali shows up in Wazuh.
 
-Track these in [progress.md](../../progress.md). Course overlaps are in [degree-connections.md](../../degree-connections.md).
+Track these in [progress.md](../progress.md). Course overlaps are in [degree-connections.md](../../docs/11-learning-and-career/04-your-degree-and-security.md).
 
 Next: [Phase 1, security fundamentals](../phase-1-security-fundamentals/README.md).

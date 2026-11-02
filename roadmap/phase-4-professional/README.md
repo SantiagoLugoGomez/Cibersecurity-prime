@@ -120,7 +120,7 @@ Build at least three, published in this repo with a README, a diagram and a writ
 5. Expect duplicates and "not applicable" results at the beginning; treat the first months as training.
 6. Write every report as if it were a pentest finding: clear title, impact, reproducible steps, evidence and a suggested fix. See [english/writing-reports.md](../../english/writing-reports.md).
 
-The legal side, including Colombian law and responsible disclosure outside formal programs, is in [legal-and-ethics.md](../../legal-and-ethics.md).
+The legal side, including Colombian law and responsible disclosure outside formal programs, is in [legal-and-ethics.md](../../docs/01-foundations/05-legal-and-ethics.md).
 
 ## Community and visibility
 
@@ -130,7 +130,7 @@ The legal side, including Colombian law and responsible disclosure outside forma
 - Contribute to an open-source security project: documentation fixes, new detection rules, or bug reports count.
 - Help newer students: mentoring is the fastest way to find the gaps in your own knowledge.
 
-Full list of events and groups: [community.md](../../community.md).
+Full list of events and groups: [community.md](../../docs/11-learning-and-career/07-community.md).
 
 ## Finding a job
 

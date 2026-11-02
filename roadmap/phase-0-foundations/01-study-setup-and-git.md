@@ -7,7 +7,7 @@ Set up the tools you will use every day for the next four years, and learn Git w
 **Goal:** a working study environment, a private notes repo, and the core Git workflow in your hands.
 
 **R. Read and study (75 min)**
-- [study-system.md](../../study-system.md) in full. It explains how every session in this roadmap works.
+- [study-system.md](../../docs/11-learning-and-career/02-the-study-system.md) in full. It explains how every session in this roadmap works.
 - [Pro Git](https://git-scm.com/book/en/v2), chapter 1 (Getting Started) and chapter 2 (Git Basics).
 - Notes to write: what a commit, a branch, `HEAD`, the staging area and a remote are, each in one or two sentences of your own.
 - Flashcards: one card per Git concept above, plus `git status`, `git diff`, `git log --oneline --graph`.
@@ -15,7 +15,7 @@ Set up the tools you will use every day for the next four years, and learn Git w
 **P. Guided practice (90 min)**
 1. Install Git, configure `user.name` and `user.email`, and create an SSH key with `ssh-keygen -t ed25519`. Add the public key to GitHub.
 2. Complete the "Introduction Sequence" and "Ramping Up" levels in [Learn Git Branching](https://learngitbranching.js.org/).
-3. Clone this repo, create a branch named `progress/week-01`, tick the first boxes in [progress.md](../../progress.md), commit, push and open a pull request against your own `main`.
+3. Clone this repo, create a branch named `progress/week-01`, tick the first boxes in [progress.md](../progress.md), commit, push and open a pull request against your own `main`.
 
 **D. Deep practice (3 h)**
 - Create a **private** repository called `security-notes`. This is where your raw notes, solutions and anything you must not publish will live. Structure it like this:

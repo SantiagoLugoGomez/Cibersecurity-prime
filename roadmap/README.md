@@ -10,7 +10,7 @@ Five phases, about 100 planned weeks of study before the open-ended professional
 | [3. Specialization](phase-3-specialization/README.md) | 24 | 180 | Six 2-week track samplers, then a 12-week curriculum in your chosen track |
 | [4. Professional level](phase-4-professional/README.md) | Ongoing | | Certification prep plans, portfolio projects, bug bounty, career |
 
-Hours assume the semester pace of about 7.5 hours per week. During breaks you can run two weeks of content per calendar week (see [weekly-plan.md](../weekly-plan.md)).
+Hours assume the semester pace of about 7.5 hours per week. During breaks you can run two weeks of content per calendar week (see [weekly-plan.md](../docs/11-learning-and-career/03-study-load-modes.md)).
 
 ## The weekly session format
 
@@ -29,14 +29,14 @@ Each week also lists:
 - **Deliverable:** something concrete you commit to your notes or to this repo. A week without a deliverable is not finished.
 - **Stretch (optional):** extra material for a week where you have more time or more interest.
 
-How to run the sessions well, take notes, use flashcards and review is explained in [study-system.md](../study-system.md). Session and weekly review templates are in [templates/](../templates/).
+How to run the sessions well, take notes, use flashcards and review is explained in [study-system.md](../docs/11-learning-and-career/02-the-study-system.md). Session and weekly review templates are in [templates/](../templates/).
 
 ## Rules that keep this sustainable
 
 1. **Do the weeks in order inside a phase.** Later weeks assume earlier ones.
 2. **A week can take two calendar weeks.** Exam season, illness and life happen. Never skip a week's deliverable to "catch up"; move the schedule instead.
 3. **Check-yourself questions decide progress.** If more than two are shaky, repeat the R session before moving on.
-4. **Only practice where you are authorized.** Every practice target in this roadmap is your own lab or a platform built for training. See [legal-and-ethics.md](../legal-and-ethics.md).
+4. **Only practice where you are authorized.** Every practice target in this roadmap is your own lab or a platform built for training. See [legal-and-ethics.md](../docs/01-foundations/05-legal-and-ethics.md).
 5. **Write as you go.** Deep practice always ends with notes good enough to become a [writeup](../writeups/TEMPLATE.md).
 
 ## Skill map

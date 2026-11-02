@@ -91,7 +91,7 @@ Most enterprise environments are Windows and Active Directory, and most SOC aler
 4. How do you confirm a Wazuh agent is reporting?
 5. What would you change in the lab to practice your chosen Phase 3 track?
 
-**Deliverable:** a fully working lab, all VMs snapshotted, isolation verified, and a lab README in your notes repo. Tick the final Phase 0 boxes in [progress.md](../../progress.md).
+**Deliverable:** a fully working lab, all VMs snapshotted, isolation verified, and a lab README in your notes repo. Tick the final Phase 0 boxes in [progress.md](../progress.md).
 
 ## End of Phase 0
 

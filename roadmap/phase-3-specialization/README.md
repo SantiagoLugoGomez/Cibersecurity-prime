@@ -106,7 +106,7 @@ Each track below has: what the job is like day to day, the core skills, how peop
 
 ### 6. Governance, risk and compliance (GRC)
 
-**Day to day.** GRC analysts write and maintain security policies and standards, run risk assessments, map controls to frameworks (ISO/IEC 27001, NIST CSF, CIS Controls, PCI DSS), collect and review evidence for audits, assess third-party vendors, track remediation, and report risk to management. In Colombia this also includes compliance with Ley 1581 de 2012 on personal data (see [legal-and-ethics.md](../../legal-and-ethics.md)) and sector rules from regulators such as the Superintendencia Financiera for banks. The work is less hands-on technically, but people who understand the technology behind the controls are more effective and more valued.
+**Day to day.** GRC analysts write and maintain security policies and standards, run risk assessments, map controls to frameworks (ISO/IEC 27001, NIST CSF, CIS Controls, PCI DSS), collect and review evidence for audits, assess third-party vendors, track remediation, and report risk to management. In Colombia this also includes compliance with Ley 1581 de 2012 on personal data (see [legal-and-ethics.md](../../docs/01-foundations/05-legal-and-ethics.md)) and sector rules from regulators such as the Superintendencia Financiera for banks. The work is less hands-on technically, but people who understand the technology behind the controls are more effective and more valued.
 
 **Core skills.** Frameworks and standards, risk methods, writing, interviewing, presenting to non-technical audiences, enough technical depth to know when a control is real and when it only exists on paper.
 

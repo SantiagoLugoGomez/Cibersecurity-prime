@@ -57,4 +57,4 @@ A note on etiquette: ask specific questions, show what you have already tried, a
 
 ## People and sources worth following
 
-Keeping up with the field is part of the job. Concrete, current sources are listed in the English track ([english/reading-professional-material.md](english/reading-professional-material.md) and [english/speaking-practice.md](english/speaking-practice.md)): CISA advisories, vendor threat reports, The DFIR Report, and podcasts such as Darknet Diaries, Risky Business and the SANS Internet Storm Center StormCast.
+Keeping up with the field is part of the job. Concrete, current sources are listed in the English track ([english/reading-professional-material.md](../../english/reading-professional-material.md) and [english/speaking-practice.md](../../english/speaking-practice.md)): CISA advisories, vendor threat reports, The DFIR Report, and podcasts such as Darknet Diaries, Risky Business and the SANS Internet Storm Center StormCast.

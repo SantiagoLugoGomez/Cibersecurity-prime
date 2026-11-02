@@ -75,12 +75,12 @@ If you find a vulnerability in a system you were not authorized to test, you are
 When you are authorized (your own systems, or a program that invites testing), responsible disclosure is the professional standard:
 
 1. **Confirm you are in scope.** Read the program policy or the organization's `security.txt` file before testing. [RFC 9116](https://www.rfc-editor.org/rfc/rfc9116) defines `security.txt`, a file at `/.well-known/security.txt` where organizations publish how to report vulnerabilities.
-2. **Report privately first.** Send a clear report to the vendor or program: affected asset, impact, reproducible steps, evidence, and a suggested fix. Use the [report-writing guidance](english/writing-reports.md).
+2. **Report privately first.** Send a clear report to the vendor or program: affected asset, impact, reproducible steps, evidence, and a suggested fix. Use the [report-writing guidance](../../english/writing-reports.md).
 3. **Do no harm.** Do not access more data than needed to prove the issue, do not run denial-of-service, do not pivot to other systems, and delete any data you had to retrieve.
 4. **Give time to fix.** Coordinate a disclosure timeline. Public disclosure happens only with agreement, usually after a patch.
 5. **Stay inside the rules.** A program's safe harbor protects you only while you follow its policy. Step outside the scope and that protection is gone.
 
-The [CERT Guide to Coordinated Vulnerability Disclosure](https://vuls.cert.org/confluence/display/CVD) is the standard reference for how this process works. How bug bounty programs operate in practice is covered in [Phase 4](roadmap/phase-4-professional/README.md#bug-bounty).
+The [CERT Guide to Coordinated Vulnerability Disclosure](https://vuls.cert.org/confluence/display/CVD) is the standard reference for how this process works. How bug bounty programs operate in practice is covered in [Phase 4](../../roadmap/phase-4-professional/README.md#bug-bounty).
 
 ## A short ethical code
 

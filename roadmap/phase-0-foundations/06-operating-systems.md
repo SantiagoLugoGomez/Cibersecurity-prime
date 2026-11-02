@@ -49,7 +49,7 @@ You cannot exploit or defend what you do not understand. This module builds a me
 
 **D. Deep practice (3 h)**
 - Study a time-of-check-to-time-of-use (TOCTOU) race conceptually: write a script where one process checks a file then acts on it, and another process swaps the file in between, and show how the check can be defeated. Explain in your notes why setuid programs that do this are exploitable.
-- Write a note connecting this module to the degree's DSA course ([degree-connections.md](../../degree-connections.md)): stack, heap, and why a buffer overflow corrupts adjacent memory.
+- Write a note connecting this module to the degree's DSA course ([degree-connections.md](../../docs/11-learning-and-career/04-your-degree-and-security.md)): stack, heap, and why a buffer overflow corrupts adjacent memory.
 
 **E. English (60 min)**
 - Read the Wikipedia or OSTEP description of a race condition. Explain, out loud and recorded, what a race condition is and give one security example, in two minutes.

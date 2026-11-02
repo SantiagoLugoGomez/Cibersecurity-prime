@@ -1,6 +1,6 @@
 # Weekly review: week of <date>
 
-Fill this in during your Sunday review slot ([weekly-plan.md](../weekly-plan.md)).
+Fill this in during your Sunday review slot ([weekly-plan.md](../docs/11-learning-and-career/03-study-load-modes.md)).
 
 ## Sessions done this week
 
@@ -34,6 +34,6 @@ If any were missed, why, and when will you make them up (or how does the schedul
 
 ## Admin
 
-- [ ] [progress.md](../progress.md) updated
+- [ ] [progress.md](../roadmap/progress.md) updated
 - [ ] Next week planned (which module, which days)
 - [ ] CTF/event log and writeup log updated if relevant

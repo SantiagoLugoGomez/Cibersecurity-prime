@@ -81,12 +81,12 @@ Most of what the degree teaches in the first semesters shows up in security work
 
 ## Fundamentals of Cybersecurity
 
-Use the course as the theory track for [Phase 1](roadmap/phase-1-security-fundamentals/README.md). For each course unit, do the matching Phase 1 lab the same week. Concepts stick when you have both the definition from class and the experience of exploiting or defending the thing.
+Use the course as the theory track for [Phase 1](../../roadmap/phase-1-security-fundamentals/README.md). For each course unit, do the matching Phase 1 lab the same week. Concepts stick when you have both the definition from class and the experience of exploiting or defending the thing.
 
 ## Networking
 
-The degree's networking course will revisit [Phase 0](roadmap/phase-0-foundations/README.md) in more depth. When it starts:
+The degree's networking course will revisit [Phase 0](../../roadmap/phase-0-foundations/README.md) in more depth. When it starts:
 
 - Rebuild the four Phase 0 packet captures and add an analysis of each layer's headers.
-- Configure the OPNsense router in the [home lab](homelab/README.md) with VLANs or separate segments, firewall rules and logging, and test the rules from Kali.
+- Configure the OPNsense router in the [home lab](../../homelab/README.md) with VLANs or separate segments, firewall rules and logging, and test the rules from Kali.
 - Capture and explain an ARP exchange, a DHCP lease and a traceroute, and connect each to an attack it enables (ARP spoofing, rogue DHCP, network mapping) and its defense.

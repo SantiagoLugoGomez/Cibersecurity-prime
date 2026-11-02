@@ -47,6 +47,6 @@ By the end of this phase you can:
 - [ ] You can read an intrusion report, map it to ATT&CK (post-v19 names), and propose detections.
 - [ ] You can write a CSF 2.0 profile, a risk register and a security policy, and prioritize vulnerabilities with CVSS, EPSS and KEV together.
 
-Track these in [progress.md](../../progress.md).
+Track these in [progress.md](../progress.md).
 
 Next: [Phase 2, guided practice](../phase-2-guided-practice/README.md).

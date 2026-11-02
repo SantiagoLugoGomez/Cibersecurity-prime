@@ -27,20 +27,20 @@ One longer, open problem: a machine, a build, a tool, an investigation. This is 
 - Work from the week's method, not from a walkthrough.
 - When stuck for 45 minutes with no progress, take one hint, then close it.
 - Keep notes *as you go*, not after. Screenshots, commands, what worked and what did not.
-- End with a short writeup. The [writeup template](writeups/TEMPLATE.md) is the target.
+- End with a short writeup. The [writeup template](../../writeups/TEMPLATE.md) is the target.
 
 ### E: English (60 min)
 
-Same topic as the week, but in English: read a source, write a note or finding, or explain something out loud. The [english track](english/README.md) says exactly what to do each week. Do not skip it; technical English is a career multiplier and it is easiest to build on material you already understand.
+Same topic as the week, but in English: read a source, write a note or finding, or explain something out loud. The [english track](../../english/README.md) says exactly what to do each week. Do not skip it; technical English is a career multiplier and it is easiest to build on material you already understand.
 
 ## Notes: the two-repo system
 
 Keep two separate places:
 
 - **This public repo (portfolio):** polished writeups, reports, tools and your progress. Things you are happy for an employer to see.
-- **A private `security-notes` repo:** raw notes, flashcard decks, lab command history, and anything you must not publish (solutions to active or graded content). The [`.gitignore`](.gitignore) here excludes `private/` as a backup, but keep genuinely private material in the private repo.
+- **A private `security-notes` repo:** raw notes, flashcard decks, lab command history, and anything you must not publish (solutions to active or graded content). The [`.gitignore`](../../.gitignore) here excludes `private/` as a backup, but keep genuinely private material in the private repo.
 
-Structure your private notes one file per week, named like `phase-0/week-02.md`, following the [weekly note template](templates/weekly-note.md). Future-you will search these constantly.
+Structure your private notes one file per week, named like `phase-0/week-02.md`, following the [weekly note template](../../templates/weekly-note.md). Future-you will search these constantly.
 
 ## Flashcards and spaced repetition
 
@@ -63,7 +63,7 @@ Do not lie to yourself here. The questions mirror what an interviewer or an exam
 
 ## Weekly and monthly review
 
-- **End of each week (part of the Sunday slot in [weekly-plan.md](weekly-plan.md)):** answer the check-yourself questions, commit your deliverable, update [progress.md](progress.md), and plan the next week. Use the [weekly review template](templates/weekly-review.md).
+- **End of each week (part of the Sunday slot in [weekly-plan.md](03-study-load-modes.md)):** answer the check-yourself questions, commit your deliverable, update [progress.md](../../roadmap/progress.md), and plan the next week. Use the [weekly review template](../../templates/weekly-review.md).
 - **End of each month:** reread your month's writeups, re-answer a sample of old check-yourself questions, and note any topic that has gone stale to refresh with a few flashcards.
 - **End of each phase:** confirm the phase mastery checklist honestly before moving on.
 
@@ -82,6 +82,6 @@ Being stuck is the job, not a failure. A routine for it:
 
 - A fixed weekly schedule beats motivation. Put the deep-practice block in your calendar as an appointment.
 - Consistency over intensity: four steady hours a week for a year beats occasional marathons.
-- Track streaks in [progress.md](progress.md); a visible chain is motivating.
+- Track streaks in [progress.md](../../roadmap/progress.md); a visible chain is motivating.
 - One rest day a week with no security work is part of the plan.
-- During exam season, drop to the maintenance plan in [weekly-plan.md](weekly-plan.md) rather than stopping entirely.
+- During exam season, drop to the maintenance plan in [weekly-plan.md](03-study-load-modes.md) rather than stopping entirely.

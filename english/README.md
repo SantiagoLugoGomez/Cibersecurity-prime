@@ -15,7 +15,7 @@ C2 in this context does not mean sounding like a dictionary. It means precision 
 
 ## How to use this track
 
-- Spend one weekly block here (see [weekly-plan.md](../weekly-plan.md)). It is small and steady, not a separate course.
+- Spend one weekly block here (see [weekly-plan.md](../docs/11-learning-and-career/03-study-load-modes.md)). It is small and steady, not a separate course.
 - Tie it to what you are already doing. The text you read for a lab is also your reading practice; the writeup you owe is also your writing practice.
 - Keep a personal vocabulary file. Every time you meet a term you could not have produced yourself, add it with a real example sentence from where you found it.
 - Measure twice a year. Take a free [EF SET](https://www.efset.org/ef-set-50/) reading and listening test now for a baseline, and again in six months. It is free and maps to the CEFR scale. For productive skills, judge yourself by whether a native reviewer changes your report's wording and whether you can answer an interview question without stalling.

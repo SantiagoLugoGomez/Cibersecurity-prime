@@ -105,7 +105,7 @@ Write this on a card and follow it on every challenge and machine from now on:
 
 **R. Read and study (75 min)**
 - [pwn.college](https://pwn.college/): the program-interaction and introductory assembly dojos (start them).
-- Notes: the stack, calling conventions, what a buffer overflow overwrites, what a shellcode is at a high level. Connect to Module 0.6 (memory) and the DSA course ([degree-connections.md](../../degree-connections.md)).
+- Notes: the stack, calling conventions, what a buffer overflow overwrites, what a shellcode is at a high level. Connect to Module 0.6 (memory) and the DSA course ([degree-connections.md](../../docs/11-learning-and-career/04-your-degree-and-security.md)).
 - Flashcards: stack frame, return address, buffer overflow, what `pwntools` is for.
 
 **P. Guided practice (90 min)**

@@ -10,7 +10,7 @@
 | Hints used | None |
 | Tags | web, sqli, authentication, owasp-a05, owasp-a07 |
 
-> Authorization: Juice Shop is an open-source application published by OWASP for training, running on my own machine at `10.10.10.20`. It is designed to be attacked and its writeups are meant to be shared. See [../legal-and-ethics.md](../legal-and-ethics.md).
+> Authorization: Juice Shop is an open-source application published by OWASP for training, running on my own machine at `10.10.10.20`. It is designed to be attacked and its writeups are meant to be shared. See [../legal-and-ethics.md](../docs/01-foundations/05-legal-and-ethics.md).
 
 This is a worked example of the [template](TEMPLATE.md), written to the standard expected in the rest of the repo.
 

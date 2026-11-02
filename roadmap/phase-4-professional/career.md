@@ -23,7 +23,7 @@ Pin the strongest repositories on your GitHub profile. A hiring manager who sees
 ## CV and LinkedIn
 
 - **One-page CV in English** (and a Spanish version for local roles). Lead with a two-line summary, then skills, then projects with links, then education and certifications. Quantify where you can ("compromised a 3-host AD lab from external foothold to Domain Admin; wrote the engagement report").
-- **LinkedIn in English**, with the same summary, your projects in the Featured section, and the certifications. Follow and engage with the Colombian and LatAm security community (see [community.md](../../community.md)).
+- **LinkedIn in English**, with the same summary, your projects in the Featured section, and the certifications. Follow and engage with the Colombian and LatAm security community (see [community.md](../../docs/11-learning-and-career/07-community.md)).
 - **Link the repo** from both. The portfolio is the differentiator.
 - Keep both honest. Never claim a certification you do not hold or a skill you cannot demonstrate in an interview.
 
@@ -34,7 +34,7 @@ Technical interviews for security roles usually have a few parts: a screening ca
 - **Rehearse the question bank** in [english/speaking-practice.md](../../english/speaking-practice.md), out loud, in both languages. The general and your-track sections matter most.
 - **Be able to walk through one project end to end** from your portfolio: what you did, why, what you found, what you would do differently. Interviewers probe depth here.
 - **Practical exercises:** some employers give a take-home (a machine to compromise and report, or logs to investigate). Your Phase 2 and 3 work is direct preparation; treat the take-home like a scoped engagement and deliver a clean report.
-- **Behavioral:** prepare short stories about teamwork (your CTF team), learning from failure (a box that beat you), and ethics (how you handle finding something you were not authorized to test, per [legal-and-ethics.md](../../legal-and-ethics.md)).
+- **Behavioral:** prepare short stories about teamwork (your CTF team), learning from failure (a box that beat you), and ethics (how you handle finding something you were not authorized to test, per [legal-and-ethics.md](../../docs/01-foundations/05-legal-and-ethics.md)).
 - **Questions to ask them:** about the team's tooling, how they handle findings, and what a first-year analyst actually does. Good questions signal seniority.
 
 ## A realistic timeline
@@ -54,4 +54,4 @@ Technical interviews for security roles usually have a few parts: a screening ca
 - Specialize, but keep a working knowledge of the adjacent tracks. The most valuable people bridge offense and defense, or technology and governance.
 - Mentor the students behind you. It builds your reputation and reveals the gaps in your own knowledge.
 
-Full community and event list: [community.md](../../community.md). Certifications and budget paths: the [Phase 4 overview](README.md).
+Full community and event list: [community.md](../../docs/11-learning-and-career/07-community.md). Certifications and budget paths: the [Phase 4 overview](README.md).
