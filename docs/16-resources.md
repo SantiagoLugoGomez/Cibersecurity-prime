@@ -1,6 +1,9 @@
 # Reading and resource list
 
-Everything referenced across the roadmap, in one place, so you can see what to read, when, and whether it is free. Prices and versions were checked in October 2026; reconfirm before buying anything.
+> [!TIP]
+> **In short:** this page is for **learning from**, not citing: free books, courses, platforms and tools, organized by when the roadmap wants you to use them. For the formal citation behind a specific claim in `docs/` (an RFC, a paper, a standard), go to [References](15-references.md) instead; the two pages serve different jobs and intentionally do not duplicate each other.
+
+Everything referenced across the roadmap, in one place, so you can see what to read, when, and whether it is free. Prices and versions were checked in October and November 2026; reconfirm before buying anything.
 
 ## How to use this list
 
