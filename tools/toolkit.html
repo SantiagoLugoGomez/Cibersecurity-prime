@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Security toolkit</title>
+<style>
+  :root {
+    --bg: #0f1115; --panel: #171a21; --border: #2a2e38; --text: #e6e8ec;
+    --muted: #9aa3b2; --accent: #4f9dff; --good: #3ecf8e; --warn: #e0a93e; --bad: #e5484d;
+    --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #f6f7f9; --panel: #ffffff; --border: #e1e4e9; --text: #1a1d23; --muted: #5b6372; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  header { padding: 20px 16px 8px; max-width: 1000px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 20px; }
+  header p { margin: 0; color: var(--muted); font-size: 13px; }
+  nav { max-width: 1000px; margin: 12px auto 0; padding: 0 16px; display: flex; flex-wrap: wrap; gap: 6px; }
+  nav button {
+    background: var(--panel); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 13px; cursor: pointer;
+  }
+  nav button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  main { max-width: 1000px; margin: 16px auto 60px; padding: 0 16px; }
+  section { display: none; background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+  section.active { display: block; }
+  section h2 { margin-top: 0; font-size: 17px; }
+  section p.hint { color: var(--muted); font-size: 13px; margin-top: -6px; }
+  label { display: block; font-size: 13px; color: var(--muted); margin: 14px 0 4px; }
+  input[type=text], input[type=number], textarea, select {
+    width: 100%; background: var(--bg); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 9px 10px; font-family: var(--mono); font-size: 13px;
+  }
+  textarea { resize: vertical; min-height: 80px; }
+  .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+  .out {
+    margin-top: 14px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+    padding: 12px; font-family: var(--mono); font-size: 13px; white-space: pre-wrap; word-break: break-all;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 10px; }
+  th, td { text-align: left; border-bottom: 1px solid var(--border); padding: 6px 8px; }
+  th { color: var(--muted); font-weight: 600; }
+  .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; }
+  .pill.good { background: rgba(62,207,142,.15); color: var(--good); }
+  .pill.warn { background: rgba(224,169,62,.15); color: var(--warn); }
+  .pill.bad { background: rgba(229,72,77,.15); color: var(--bad); }
+  .note { font-size: 12px; color: var(--muted); margin-top: 8px; }
+  footer { max-width: 1000px; margin: 0 auto 40px; padding: 0 16px; color: var(--muted); font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Security toolkit</h1>
+  <p>Offline, single-file, no network calls. Open this file directly in a browser; nothing here is sent anywhere.</p>
+</header>
+<nav id="nav"></nav>
+<main id="main"></main>
+<footer>Cibersecurity-prime / tools / toolkit.html &middot; see <code>tools/README.md</code> for what each tool does and does not cover.</footer>
+
+<script>
+const sections = [];
+
+function addSection(id, title, hint, buildFn) {
+  sections.push({ id, title, hint, buildFn });
+}
+
+function el(tag, attrs, html) {
+  const n = document.createElement(tag);
+  if (attrs) for (const k in attrs) n.setAttribute(k, attrs[k]);
+  if (html !== undefined) n.innerHTML = html;
+  return n;
+}
+
+/* ---------- Subnet / CIDR calculator ---------- */
+addSection("subnet", "Subnet / CIDR calculator", "Enter an IPv4 address and a prefix length.", (body) => {
+  body.appendChild(el("div", { class: "row" }, `
+    <div><label>IPv4 address</label><input id="sn-ip" type="text" value="192.168.1.130"></div>
+    <div><label>Prefix length (CIDR)</label><input id="sn-cidr" type="number" min="0" max="32" value="26"></div>
+  `));
+  const out = el("div", { id: "sn-out", class: "out" }, "");
+  body.appendChild(out);
+
+  function toInt(ip) {
+    const p = ip.split(".").map(Number);
+    if (p.length !== 4 || p.some(x => isNaN(x) || x < 0 || x > 255)) return null;
+    return ((p[0] << 24) | (p[1] << 16) | (p[2] << 8) | p[3]) >>> 0;
+  }
+  function toDotted(n) {
+    return [(n >>> 24) & 255, (n >>> 16) & 255, (n >>> 8) & 255, n & 255].join(".");
+  }
+  function compute() {
+    const ip = document.getElementById("sn-ip").value.trim();
+    const cidr = parseInt(document.getElementById("sn-cidr").value, 10);
+    const ipInt = toInt(ip);
+    if (ipInt === null || isNaN(cidr) || cidr < 0 || cidr > 32) {
+      out.textContent = "Enter a valid IPv4 address and a prefix from 0 to 32.";
+      return;
+    }
+    const maskInt = cidr === 0 ? 0 : (0xFFFFFFFF << (32 - cidr)) >>> 0;
+    const network = (ipInt & maskInt) >>> 0;
+    const wildcard = (~maskInt) >>> 0;
+    const broadcast = (network | wildcard) >>> 0;
+    const totalHosts = Math.pow(2, 32 - cidr);
+    const usable = cidr >= 31 ? 0 : totalHosts - 2;
+    const firstHost = cidr >= 31 ? network : network + 1;
+    const lastHost = cidr >= 31 ? broadcast : broadcast - 1;
+    out.textContent =
+`Network:       ${toDotted(network)}/${cidr}
+Netmask:       ${toDotted(maskInt)}
+Wildcard mask: ${toDotted(wildcard)}
+Broadcast:     ${toDotted(broadcast)}
+Usable range:  ${toDotted(firstHost)} - ${toDotted(lastHost)}
+Usable hosts:  ${usable.toLocaleString()}
+Total addresses in block: ${totalHosts.toLocaleString()}`;
+  }
+  document.addEventListener("input", (e) => {
+    if (["sn-ip", "sn-cidr"].includes(e.target.id)) compute();
+  });
+  setTimeout(compute, 0);
+});
+
+/* ---------- Unix permissions calculator ---------- */
+addSection("perms", "Unix permissions calculator", "Convert between octal and rwx, or build a mode from checkboxes.", (body) => {
+  body.appendChild(el("div", { class: "row" }, `
+    <div><label>Octal mode (e.g. 750)</label><input id="pm-octal" type="text" value="750"></div>
+    <div><label>Symbolic (e.g. rwxr-x---)</label><input id="pm-sym" type="text" value="rwxr-x---"></div>
+  `));
+  const out = el("div", { id: "pm-out", class: "out" }, "");
+  body.appendChild(out);
+
+  function octalToSym(octal) {
+    if (!/^[0-7]{3,4}$/.test(octal)) return null;
+    const digits = octal.length === 4 ? octal.slice(1) : octal;
+    const special = octal.length === 4 ? parseInt(octal[0], 10) : 0;
+    const map = ["---","--x","-w-","-wx","r--","r-x","rw-","rwx"];
+    let sym = digits.split("").map(d => map[parseInt(d, 10)]).join("");
+    if (special & 4) sym = sym.slice(0, 2) + (sym[2] === "x" ? "s" : "S") + sym.slice(3);
+    if (special & 2) sym = sym.slice(0, 5) + (sym[5] === "x" ? "s" : "S") + sym.slice(6);
+    if (special & 1) sym = sym.slice(0, 8) + (sym[8] === "x" ? "t" : "T");
+    return sym;
+  }
+  function symToOctal(sym) {
+    if (!/^[rwxsStT-]{9}$/.test(sym)) return null;
+    const groups = [sym.slice(0,3), sym.slice(3,6), sym.slice(6,9)];
+    const digits = groups.map(g => (g[0] !== "-" ? 4:0) + (g[1] !== "-" ? 2:0) + (/[xst]/.test(g[2]) ? 1:0));
+    const special = (/[sS]/.test(groups[0][2]) ? 4:0) + (/[sS]/.test(groups[1][2]) ? 2:0) + (/[tT]/.test(groups[2][2]) ? 1:0);
+    return (special ? String(special) : "") + digits.join("");
+  }
+  function describe(octal) {
+    const d = (octal.length === 4 ? octal.slice(1) : octal).split("").map(Number);
+    const who = ["Owner", "Group", "Other"];
+    return who.map((w, i) => `${w}: read=${!!(d[i]&4)} write=${!!(d[i]&2)} execute=${!!(d[i]&1)}`).join("\n");
+  }
+  function fromOctal() {
+    const o = document.getElementById("pm-octal").value.trim();
+    const sym = octalToSym(o);
+    if (sym === null) { out.textContent = "Octal must be 3 or 4 digits, each 0-7."; return; }
+    document.getElementById("pm-sym").value = sym;
+    out.textContent = describe(o);
+  }
+  function fromSym() {
+    const s = document.getElementById("pm-sym").value.trim();
+    const oct = symToOctal(s);
+    if (oct === null) { out.textContent = "Symbolic form must be 9 characters, e.g. rwxr-x---."; return; }
+    document.getElementById("pm-octal").value = oct;
+    out.textContent = describe(oct);
+  }
+  document.getElementById("pm-octal").addEventListener("input", fromOctal);
+  document.getElementById("pm-sym").addEventListener("input", fromSym);
+  setTimeout(fromOctal, 0);
+});
+
+/* ---------- Password entropy / crack time ---------- */
+addSection("entropy", "Password entropy and crack-time estimate", "A rough order-of-magnitude estimate for a password chosen at random from the given alphabet. See docs/04-cryptography-and-identity/04-passwords-and-mfa.md for what this does not capture (human-chosen passwords are not random).", (body) => {
+  body.appendChild(el("div", { class: "row" }, `
+    <div><label>Length (characters)</label><input id="en-len" type="number" min="1" value="16"></div>
+    <div><label>Alphabet</label>
+      <select id="en-alpha">
+        <option value="26">Lowercase letters only (26)</option>
+        <option value="52" selected>Upper + lowercase (52)</option>
+        <option value="62">Upper + lower + digits (62)</option>
+        <option value="95">All printable ASCII (95)</option>
+        <option value="7776">Diceware word (7776 per word)</option>
+      </select>
+    </div>
+    <div><label>Guesses per second (attacker)</label>
+      <select id="en-rate">
+        <option value="10">Online, throttled (10/s)</option>
+        <option value="1000000">Offline, fast hash, one GPU (1,000,000/s)</option>
+        <option value="100000000000" selected>Offline, fast hash, GPU cluster (1e11/s)</option>
+        <option value="10000">Offline, Argon2id, well-tuned (10,000/s)</option>
+      </select>
+    </div>
+  `));
+  const out = el("div", { id: "en-out", class: "out" }, "");
+  body.appendChild(out);
+
+  function human(seconds) {
+    const units = [["years", 31557600], ["days", 86400], ["hours", 3600], ["minutes", 60], ["seconds", 1]];
+    for (const [name, size] of units) {
+      if (seconds >= size || name === "seconds") {
+        const v = seconds / size;
+        return v >= 1e6 ? v.toExponential(2) + " " + name : v.toFixed(1) + " " + name;
+      }
+    }
+  }
+  function compute() {
+    const len = parseInt(document.getElementById("en-len").value, 10);
+    const alpha = parseInt(document.getElementById("en-alpha").value, 10);
+    const rate = parseFloat(document.getElementById("en-rate").value);
+    if (!len || len < 1) { out.textContent = "Enter a length of at least 1."; return; }
+    const bits = len * Math.log2(alpha);
+    const combinations = Math.pow(2, bits);
+    const avgSeconds = (combinations / 2) / rate;
+    out.textContent =
+`Entropy: ${bits.toFixed(1)} bits
+Possible combinations: ${combinations.toExponential(2)}
+Average time to find it at this guess rate: ${human(avgSeconds)}
+NIST SP 800-63B-4 minimum for a single-factor password: 15 characters.`;
+  }
+  document.addEventListener("input", (e) => { if (e.target.id.startsWith("en-")) compute(); });
+  document.getElementById("en-alpha").addEventListener("change", compute);
+  document.getElementById("en-rate").addEventListener("change", compute);
+  setTimeout(compute, 0);
+});
+
+/* ---------- Encoders ---------- */
+addSection("encode", "Encode / decode", "Base64, URL and hex are reversible encodings, not encryption. XOR here is the classic CTF single-byte or repeating-key cipher, for learning and for recognizing this pattern in disassembly (see docs/09-malware-and-reverse-engineering/05-reverse-engineering-basics.md).", (body) => {
+  body.appendChild(el("div", null, `
+    <label>Input</label>
+    <textarea id="ec-in">Hello, world!</textarea>
+    <div class="row" style="margin-top:12px">
+      <div><label>Base64</label><button id="ec-b64e" type="button">Encode</button> <button id="ec-b64d" type="button">Decode</button></div>
+      <div><label>URL</label><button id="ec-urle" type="button">Encode</button> <button id="ec-urld" type="button">Decode</button></div>
+      <div><label>Hex</label><button id="ec-hexe" type="button">Encode</button> <button id="ec-hexd" type="button">Decode</button></div>
+    </div>
+    <label>XOR key (text or 0x-hex byte)</label>
+    <div class="row">
+      <input id="ec-xorkey" type="text" value="42">
+      <button id="ec-xor" type="button">XOR encode/decode (symmetric)</button>
+    </div>
+  `));
+  const out = el("div", { id: "ec-out", class: "out" }, "");
+  body.appendChild(out);
+  const input = () => document.getElementById("ec-in").value;
+
+  document.getElementById("ec-b64e").onclick = () => { try { out.textContent = btoa(unescape(encodeURIComponent(input()))); } catch(e){ out.textContent = "Error: " + e.message; } };
+  document.getElementById("ec-b64d").onclick = () => { try { out.textContent = decodeURIComponent(escape(atob(input().trim()))); } catch(e){ out.textContent = "Error: " + e.message; } };
+  document.getElementById("ec-urle").onclick = () => { out.textContent = encodeURIComponent(input()); };
+  document.getElementById("ec-urld").onclick = () => { try { out.textContent = decodeURIComponent(input()); } catch(e){ out.textContent = "Error: " + e.message; } };
+  document.getElementById("ec-hexe").onclick = () => {
+    out.textContent = Array.from(new TextEncoder().encode(input())).map(b => b.toString(16).padStart(2,"0")).join("");
+  };
+  document.getElementById("ec-hexd").onclick = () => {
+    try {
+      const clean = input().trim().replace(/\s+/g, "");
+      const bytes = clean.match(/.{1,2}/g).map(h => parseInt(h, 16));
+      out.textContent = new TextDecoder().decode(new Uint8Array(bytes));
+    } catch (e) { out.textContent = "Error: " + e.message; }
+  };
+  document.getElementById("ec-xor").onclick = () => {
+    const keyRaw = document.getElementById("ec-xorkey").value.trim();
+    let keyBytes;
+    if (/^0x[0-9a-f]+$/i.test(keyRaw)) keyBytes = [parseInt(keyRaw, 16) & 0xff];
+    else keyBytes = Array.from(new TextEncoder().encode(keyRaw));
+    if (!keyBytes.length) { out.textContent = "Enter a non-empty key."; return; }
+    const data = Array.from(new TextEncoder().encode(input()));
+    const result = data.map((b, i) => b ^ keyBytes[i % keyBytes.length]);
+    const bytesHex = result.map(b => b.toString(16).padStart(2,"0")).join("");
+    let asText;
+    try { asText = new TextDecoder("utf-8", { fatal: true }).decode(new Uint8Array(result)); }
+    catch { asText = "(not valid UTF-8, shown as hex only)"; }
+    out.textContent = `Hex:  ${bytesHex}\nText: ${asText}`;
+  };
+});
+
+/* ---------- JWT decoder ---------- */
+addSection("jwt", "JWT decoder", "Decodes the header and payload only. This does not verify the signature and should never be used to trust a token's contents; see docs/04-cryptography-and-identity/05-authorization-sessions-and-federation.md.", (body) => {
+  body.appendChild(el("div", null, `<label>Token</label><textarea id="jw-in" placeholder="eyJhbGciOi..."></textarea>`));
+  const out = el("div", { id: "jw-out", class: "out" }, "");
+  body.appendChild(out);
+  function b64urlDecode(s) {
+    s = s.replace(/-/g, "+").replace(/_/g, "/");
+    while (s.length % 4) s += "=";
+    return decodeURIComponent(escape(atob(s)));
+  }
+  function decode() {
+    const parts = document.getElementById("jw-in").value.trim().split(".");
+    if (parts.length < 2) { out.textContent = "Paste a token with at least a header and payload section."; return; }
+    try {
+      const header = JSON.stringify(JSON.parse(b64urlDecode(parts[0])), null, 2);
+      const payload = JSON.stringify(JSON.parse(b64urlDecode(parts[1])), null, 2);
+      out.textContent = `HEADER\n${header}\n\nPAYLOAD\n${payload}\n\n(signature not verified: ${parts[2] ? parts[2].slice(0,24) + "..." : "none present"})`;
+    } catch (e) { out.textContent = "Could not decode: " + e.message; }
+  }
+  document.getElementById("jw-in").addEventListener("input", decode);
+});
+
+/* ---------- Epoch converter ---------- */
+addSection("epoch", "Epoch / timestamp converter", "Unix epoch is seconds since 1970-01-01T00:00:00Z. Useful when reading raw logs during forensics or threat hunting.", (body) => {
+  body.appendChild(el("div", { class: "row" }, `
+    <div><label>Epoch (seconds)</label><input id="ep-sec" type="text" placeholder="e.g. 1793808000"></div>
+    <div><label>Human date/time (local)</label><input id="ep-human" type="text" placeholder="e.g. 2026-11-03 12:00:00"></div>
+    <div><label>&nbsp;</label><button id="ep-now" type="button">Use current time</button></div>
+  `));
+  const out = el("div", { id: "ep-out", class: "out" }, "");
+  body.appendChild(out);
+  function fromEpoch() {
+    const n = Number(document.getElementById("ep-sec").value.trim());
+    if (!isFinite(n)) { out.textContent = "Enter a numeric epoch value in seconds."; return; }
+    const d = new Date(n * 1000);
+    out.textContent = `UTC:   ${d.toISOString()}\nLocal: ${d.toString()}`;
+  }
+  function fromHuman() {
+    const v = document.getElementById("ep-human").value.trim();
+    const d = new Date(v.replace(" ", "T"));
+    if (isNaN(d.getTime())) { out.textContent = "Could not parse that date/time."; return; }
+    out.textContent = `Epoch (seconds): ${Math.floor(d.getTime()/1000)}\nEpoch (ms):      ${d.getTime()}\nUTC: ${d.toISOString()}`;
+  }
+  document.getElementById("ep-sec").addEventListener("input", fromEpoch);
+  document.getElementById("ep-human").addEventListener("input", fromHuman);
+  document.getElementById("ep-now").onclick = () => {
+    document.getElementById("ep-sec").value = Math.floor(Date.now()/1000);
+    fromEpoch();
+  };
+});
+
+/* ---------- Hash identifier ---------- */
+addSection("hashid", "Hash identifier", "Guesses the algorithm family from length and character set alone. This is a heuristic, not proof; several algorithms share a length.", (body) => {
+  body.appendChild(el("div", null, `<label>Hash value</label><input id="hi-in" type="text" placeholder="paste a hash"></div>`));
+  const out = el("div", { id: "hi-out", class: "out" }, "");
+  body.appendChild(out);
+  const patterns = [
+    [/^\$2[aby]?\$\d+\$[./A-Za-z0-9]{53}$/, "bcrypt"],
+    [/^\$argon2(id|i|d)\$/, "Argon2 (id/i/d)"],
+    [/^\$6\$/, "sha512crypt (Linux /etc/shadow)"],
+    [/^\$5\$/, "sha256crypt (Linux /etc/shadow)"],
+    [/^\$1\$/, "md5crypt (Linux /etc/shadow, legacy)"],
+    [/^[a-f0-9]{32}$/i, "MD5, or NTLM, or MD4 (32 hex chars; context decides which)"],
+    [/^[a-f0-9]{40}$/i, "SHA-1 (40 hex chars)"],
+    [/^[a-f0-9]{56}$/i, "SHA-224 (56 hex chars)"],
+    [/^[a-f0-9]{64}$/i, "SHA-256 (64 hex chars)"],
+    [/^[a-f0-9]{96}$/i, "SHA-384 (96 hex chars)"],
+    [/^[a-f0-9]{128}$/i, "SHA-512 (128 hex chars)"],
+    [/^[A-Za-z0-9+/]{27}=$/, "Possibly a base64-encoded 160-bit value (e.g. some SHA-1 encodings)"],
+  ];
+  document.getElementById("hi-in").addEventListener("input", () => {
+    const v = document.getElementById("hi-in").value.trim();
+    const matches = patterns.filter(([re]) => re.test(v)).map(([, name]) => name);
+    out.textContent = matches.length
+      ? "Possible match:\n- " + matches.join("\n- ")
+      : (v ? "No pattern matched. Check length, character set, and any prefix like $1$ or $2b$." : "Paste a hash above.");
+  });
+});
+
+/* ---------- Port reference ---------- */
+addSection("ports", "Port reference", "Searchable list of commonly seen ports; full table in docs/cheatsheet.md.", (body) => {
+  body.appendChild(el("div", null, `<label>Filter</label><input id="pt-filter" type="text" placeholder="e.g. kerberos, 445, ldap">`));
+  const data = [
+    [20,"FTP data"],[21,"FTP control"],[22,"SSH"],[23,"Telnet"],[25,"SMTP"],[53,"DNS"],
+    [67,"DHCP server"],[68,"DHCP client"],[80,"HTTP"],[88,"Kerberos"],[110,"POP3"],[111,"RPC"],
+    [123,"NTP"],[135,"MSRPC"],[137,"NetBIOS name"],[138,"NetBIOS datagram"],[139,"NetBIOS session"],
+    [143,"IMAP"],[161,"SNMP"],[162,"SNMP trap"],[389,"LDAP"],[443,"HTTPS"],[445,"SMB"],
+    [464,"Kerberos password change"],[465,"SMTPS"],[514,"syslog"],[587,"SMTP submission"],
+    [636,"LDAPS"],[993,"IMAPS"],[995,"POP3S"],[1433,"MSSQL"],[1521,"Oracle"],[2049,"NFS"],
+    [3268,"Global Catalog"],[3269,"Global Catalog SSL"],[3306,"MySQL"],[3389,"RDP"],
+    [5432,"PostgreSQL"],[5985,"WinRM HTTP"],[5986,"WinRM HTTPS"],[6379,"Redis"],
+    [8080,"HTTP alt"],[8443,"HTTPS alt"],[9200,"Elasticsearch"],[27017,"MongoDB"],
+  ];
+  const table = el("table", null, "<thead><tr><th>Port</th><th>Service</th></tr></thead><tbody></tbody>");
+  body.appendChild(table);
+  const tbody = table.querySelector("tbody");
+  function render() {
+    const f = document.getElementById("pt-filter").value.trim().toLowerCase();
+    tbody.innerHTML = "";
+    data.filter(([p, s]) => !f || String(p).includes(f) || s.toLowerCase().includes(f))
+        .forEach(([p, s]) => tbody.appendChild(el("tr", null, `<td>${p}</td><td>${s}</td>`)));
+  }
+  document.getElementById("pt-filter").addEventListener("input", render);
+  setTimeout(render, 0);
+});
+
+/* ---------- ATT&CK tactics reference ---------- */
+addSection("attack", "ATT&CK tactics reference", "The 15 MITRE ATT&CK tactics (enterprise matrix, v19). See docs/01-foundations/04-adversaries-and-attack-frameworks.md.", (body) => {
+  body.appendChild(el("div", null, `<label>Filter</label><input id="at-filter" type="text" placeholder="e.g. credential, TA0006">`));
+  const data = [
+    ["TA0043","Reconnaissance","Gathering information to plan future operations"],
+    ["TA0042","Resource Development","Establishing resources to support operations"],
+    ["TA0001","Initial Access","Getting into the network"],
+    ["TA0002","Execution","Running attacker-controlled code"],
+    ["TA0003","Persistence","Maintaining access across restarts and credential changes"],
+    ["TA0004","Privilege Escalation","Gaining higher-level permissions"],
+    ["TA0005","Stealth","Avoiding detection (split from Defense Evasion in v19)"],
+    ["TA0112","Defense Impairment","Disabling or weakening defenses (split from Defense Evasion in v19)"],
+    ["TA0006","Credential Access","Stealing credentials"],
+    ["TA0007","Discovery","Learning about the environment"],
+    ["TA0008","Lateral Movement","Moving through the environment"],
+    ["TA0009","Collection","Gathering data of interest"],
+    ["TA0011","Command and Control","Communicating with compromised systems"],
+    ["TA0010","Exfiltration","Stealing data"],
+    ["TA0040","Impact","Disrupting availability or integrity"],
+  ];
+  const table = el("table", null, "<thead><tr><th>ID</th><th>Tactic</th><th>Meaning</th></tr></thead><tbody></tbody>");
+  body.appendChild(table);
+  const tbody = table.querySelector("tbody");
+  function render() {
+    const f = document.getElementById("at-filter").value.trim().toLowerCase();
+    tbody.innerHTML = "";
+    data.filter(row => !f || row.some(c => c.toLowerCase().includes(f)))
+        .forEach(([id, name, desc]) => tbody.appendChild(el("tr", null, `<td>${id}</td><td>${name}</td><td>${desc}</td>`)));
+  }
+  document.getElementById("at-filter").addEventListener("input", render);
+  setTimeout(render, 0);
+});
+
+/* ---------- Build the page ---------- */
+const nav = document.getElementById("nav");
+const main = document.getElementById("main");
+
+sections.forEach((s, i) => {
+  const btn = el("button", { type: "button", "data-id": s.id }, s.title);
+  if (i === 0) btn.classList.add("active");
+  btn.onclick = () => showSection(s.id);
+  nav.appendChild(btn);
+
+  const sec = el("section", { id: "sec-" + s.id });
+  if (i === 0) sec.classList.add("active");
+  sec.appendChild(el("h2", null, s.title));
+  if (s.hint) sec.appendChild(el("p", { class: "hint" }, s.hint));
+  main.appendChild(sec);
+  s.buildFn(sec);
+});
+
+function showSection(id) {
+  document.querySelectorAll("nav button").forEach(b => b.classList.toggle("active", b.dataset.id === id));
+  document.querySelectorAll("main section").forEach(s => s.classList.toggle("active", s.id === "sec-" + id));
+}
+</script>
+</body>
+</html>
