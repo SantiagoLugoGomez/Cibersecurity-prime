@@ -18,7 +18,7 @@
 
 A plan that assumes every week is Green either gets abandoned during the first hard month of the semester, which trains the habit of all-or-nothing thinking, or it gets followed at the cost of the degree itself, which this roadmap exists to support, not compete with. Defining Yellow and Red explicitly, in advance, means a hard week has a **specific, smaller, still-real plan** waiting for it, instead of an implicit choice between the full plan and nothing. The spacing research in [Learning science](01-learning-science.md#spacing-distribute-practice-over-time) is itself the argument for this: a small amount of consistent contact with the material, even a stripped-down 90 minutes in a brutal week, protects retention far better than a full week of silence followed by a full week of catch-up.
 
-## 🟢 Green: the sustainable default
+## Green: the sustainable default
 
 This is the plan for most weeks of a normal semester, built around the four sessions from [the study system](02-the-study-system.md), spread across real days.
 
@@ -42,7 +42,7 @@ This schedule overlaps deliberately with your coursework (see [Your degree and s
 - [ ] Deliverable committed
 - [ ] [progress.md](../../roadmap/progress.md) updated and next week planned
 
-## 🟡 Yellow: one heavy week
+## Yellow: one heavy week
 
 Triggered by a single significant exam or deadline that week, but not several colliding at once. The decision that matters here is which single practice session to keep: pick whichever is more time-sensitive (a machine you are mid-way through, or new material a later course depends on), and let the other wait a week rather than trying to compress both into less time than either needs.
 
@@ -54,7 +54,7 @@ Triggered by a single significant exam or deadline that week, but not several co
 
 **Yellow is not a punishment mode.** A Yellow week that still touched the material for 90 minutes and reviewed flashcards daily is a successful week by this system's own standard.
 
-## 🔴 Red: crisis load
+## Red: crisis load
 
 Triggered by finals week, several deadlines landing in the same days, or acute illness. The only goal in Red mode is **not losing the thread entirely**.
 
@@ -64,7 +64,7 @@ Triggered by finals week, several deadlines landing in the same days, or acute i
 
 A short Red week is easier to recover from than a full stop followed by the guilt of having "fallen behind," which is precisely why Red exists as a named, legitimate mode rather than an unplanned collapse.
 
-## ⏸️ Pause: a genuine full stop
+## Pause: a genuine full stop
 
 Some periods genuinely call for zero security work: a serious illness, a family emergency, an intentional, planned break. Pause differs from an unplanned lapse in one specific way: it comes with a **written resume plan**, decided either in advance or as soon as you are able to think clearly about it again.
 
