@@ -85,3 +85,6 @@ These support the [GRC track](../../roadmap/phase-3-specialization/track-grc.md)
 ## Key references
 
 CONPES 3701, 3854, 3995 and 4144 (DNP) · Decreto 338 de 2022 · MinTIC MSPI (Resolución 02277 de 2025) · Superintendencia Financiera de Colombia, Circular Externa 007 de 2018 and 033 de 2020. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Privacy and data protection](04-privacy-and-data-protection.md) · [Index](../00-start-here.md) · [Learning science →](../11-learning-and-career/01-learning-science.md)

@@ -103,3 +103,6 @@ The field's day-to-day work is reading documentation, writing careful notes, enu
 ## Key references
 
 NIST SP 800-63B-4 · Saltzer and Schroeder (1975) · Verizon DBIR. Full list in [References](15-references.md).
+
+<!-- navigation -->
+[← Troubleshooting](12-measuring-progress/02-troubleshooting.md) · [Index](00-start-here.md) · [Glossary →](14-glossary.md)

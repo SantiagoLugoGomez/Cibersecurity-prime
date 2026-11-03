@@ -258,3 +258,6 @@ These support [Module 1.4](../../roadmap/phase-1-security-fundamentals/04-web-se
 ## Key references
 
 CWE-79 · CWE-89 · Halfond et al. (2006) · OWASP Cross Site Scripting Prevention Cheat Sheet · OWASP Deserialization Cheat Sheet · OWASP Injection Prevention Cheat Sheet · OWASP Query Parameterization Cheat Sheet · OWASP SQL Injection Prevention Cheat Sheet · PortSwigger Web Security Academy. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← The OWASP Top 10:2025](02-owasp-top-10-2025.md) · [Index](../00-start-here.md) · [Access control, SSRF and logic flaws →](04-access-control-ssrf-and-logic-flaws.md)

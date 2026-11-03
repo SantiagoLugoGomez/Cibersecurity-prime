@@ -80,3 +80,6 @@ These support [the study system](../11-learning-and-career/02-the-study-system.m
 ## Key references
 
 Dunlosky et al. (2013) · Roediger and Karpicke (2006). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Community](../11-learning-and-career/07-community.md) · [Index](../00-start-here.md) · [Troubleshooting →](02-troubleshooting.md)

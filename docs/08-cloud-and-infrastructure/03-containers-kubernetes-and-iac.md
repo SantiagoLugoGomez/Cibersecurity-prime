@@ -127,3 +127,6 @@ These support [Module 3](../../roadmap/phase-3-specialization/README.md) and the
 ## Key references
 
 Checkov, tfsec and Terrascan documentation · CIS Benchmarks for Docker and Kubernetes · Kubernetes documentation on Pod Security Standards and RBAC. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Cloud IAM and attack paths](02-cloud-iam-and-attack-paths.md) · [Index](../00-start-here.md) · [The malware landscape →](../09-malware-and-reverse-engineering/01-malware-landscape.md)

@@ -228,3 +228,6 @@ curl -sv https://example.com -o /dev/null
 ## Key references
 
 Kaminsky (2008) · RFC 1035 · RFC 4033 · RFC 6265 · RFC 6797 · RFC 7208 · RFC 7489 · RFC 7858 · RFC 8484 · RFC 9000 · RFC 9110 · RFC 9112 · RFC 9113 · RFC 9114 · OWASP HTTP Headers Cheat Sheet. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← TCP, UDP, ICMP and routing](02-tcp-udp-and-routing.md) · [Index](../00-start-here.md) · [Network defense architecture →](04-network-defense-architecture.md)

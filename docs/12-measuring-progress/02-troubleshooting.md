@@ -83,3 +83,6 @@ These support [the study system](../11-learning-and-career/02-the-study-system.m
 ## Key references
 
 Dunlosky et al. (2013). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← How to measure progress](01-how-to-measure-progress.md) · [Index](../00-start-here.md) · [Common myths →](../13-myths.md)

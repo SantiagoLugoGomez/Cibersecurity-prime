@@ -100,3 +100,6 @@ These map to [Module 2.3](../../roadmap/phase-2-guided-practice/03-machines-and-
 ## Key references
 
 BloodHound documentation · Microsoft Enterprise Access Model · MITRE ATT&CK · PingCastle documentation · RFC 4120. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Privilege escalation](04-privilege-escalation.md) · [Index](../00-start-here.md) · [Red teaming and adversary emulation →](06-red-teaming-and-adversary-emulation.md)

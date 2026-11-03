@@ -279,3 +279,6 @@ Read the output as a story: unexpected accounts, listeners with no explanation, 
 ## Key references
 
 CIS Benchmarks · GTFOBins · man7.org Linux manual pages · OpenSSH sshd_config(5) · OWASP Docker Security Cheat Sheet. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Legal limits and ethics](../01-foundations/05-legal-and-ethics.md) · [Index](../00-start-here.md) · [Windows internals for security →](02-windows-internals-for-security.md)

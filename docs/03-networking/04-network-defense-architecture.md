@@ -126,3 +126,6 @@ Build this in your lab with OPNsense as described in the [home lab guide](../../
 ## Key references
 
 CISA KEV Catalog · Donenfeld (2017) · NIST SP 800-41 Rev. 1 · NIST SP 800-207 · RFC 4301 · RFC 9849. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← DNS, HTTP and the web stack](03-dns-http-and-the-web-stack.md) · [Index](../00-start-here.md) · [Traffic analysis and scanning →](05-traffic-analysis-and-scanning.md)

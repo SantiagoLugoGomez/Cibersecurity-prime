@@ -177,3 +177,6 @@ Microsoft Defender for Identity monitors these signals natively. For hygiene rev
 ## Key references
 
 BloodHound documentation · Microsoft Learn: Active Directory security best practices · Microsoft Learn: Enterprise access model · MS14-025 · NIST SP 800-53 Rev. 5 · PingCastle · Schroeder and Christensen (2021). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Windows internals for security](02-windows-internals-for-security.md) · [Index](../00-start-here.md) · [Memory, corruption bugs and exploit mitigations →](04-memory-and-exploit-mitigations.md)

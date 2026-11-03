@@ -129,3 +129,6 @@ These support [Module 1.5](../../roadmap/phase-1-security-fundamentals/05-networ
 ## Key references
 
 MITRE ATT&CK · OWASP Logging Cheat Sheet · Red Canary resources · Sigma (SigmaHQ) · The Pyramid of Pain (Bianco, 2014). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Logging and telemetry](01-logging-and-telemetry.md) · [Index](../00-start-here.md) · [Security operations and the SIEM →](03-security-operations-and-siem.md)

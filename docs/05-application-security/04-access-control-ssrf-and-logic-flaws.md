@@ -212,3 +212,6 @@ These support [Module 1.4](../../roadmap/phase-1-security-fundamentals/04-web-se
 ## Key references
 
 AWS IMDSv2 documentation · CWE-22 · CWE-434 · CWE-601 · CWE-918 · Kettle (2023) · OWASP File Upload Cheat Sheet · OWASP Server-Side Request Forgery Prevention Cheat Sheet · OWASP Web Security Testing Guide · PortSwigger Web Security Academy. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Injection and cross-site scripting](03-injection-and-xss.md) · [Index](../00-start-here.md) · [API security →](05-api-security.md)

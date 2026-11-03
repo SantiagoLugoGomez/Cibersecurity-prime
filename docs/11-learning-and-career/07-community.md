@@ -84,3 +84,6 @@ These support [Module 4 of the roadmap](../../roadmap/phase-4-professional/READM
 ## Key references
 
 DragonJAR · BSides Colombia · OWASP Bogotá and Medellín · Ekoparty · CTFtime (official pages linked above). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Portfolio and writing](06-portfolio-and-writing.md) · [Index](../00-start-here.md) · [How to measure progress →](../12-measuring-progress/01-how-to-measure-progress.md)

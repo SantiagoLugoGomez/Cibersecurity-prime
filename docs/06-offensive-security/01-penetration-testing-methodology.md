@@ -200,3 +200,6 @@ These support [Module 2.1](../../roadmap/phase-2-guided-practice/01-ctf-foundati
 ## Key references
 
 MITRE ATT&CK · NIST SP 800-115 · OSSTMM · OWASP Mobile Application Security (MASVS and MASTG) · OWASP Web Security Testing Guide · PCI DSS 4.0.1 · PTES. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← LLM and AI application security](../05-application-security/07-llm-and-ai-application-security.md) · [Index](../00-start-here.md) · [Reconnaissance and enumeration →](02-reconnaissance-and-enumeration.md)

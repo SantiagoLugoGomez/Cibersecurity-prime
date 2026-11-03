@@ -130,3 +130,6 @@ These support the [GRC track](../../roadmap/phase-3-specialization/track-grc.md)
 ## Key references
 
 Decreto 1377 de 2013 · Ley 1581 de 2012 · MinTIC Resolución 02277 de 2025 (MSPI) · Sweeney (2002), k-anonymity · Dwork (2006), differential privacy. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Policies, audit and third-party risk](03-policies-audit-and-third-party-risk.md) · [Index](../00-start-here.md) · [Colombian regulatory landscape →](05-colombian-regulatory-landscape.md)

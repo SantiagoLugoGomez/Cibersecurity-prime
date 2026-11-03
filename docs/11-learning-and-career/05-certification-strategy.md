@@ -82,3 +82,6 @@ These support [Module 4](../../roadmap/phase-4-professional/README.md) of the ro
 ## Key references
 
 CompTIA · OffSec · TCM Security · HTB Academy certification documentation. The dated price table is in [Phase 4 of the roadmap](../../roadmap/phase-4-professional/README.md#certifications-in-order). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Your degree and security](04-your-degree-and-security.md) · [Index](../00-start-here.md) · [Portfolio and writing →](06-portfolio-and-writing.md)

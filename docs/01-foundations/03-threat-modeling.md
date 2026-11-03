@@ -176,3 +176,6 @@ You do not need special software to start. A whiteboard, or a diagram in draw.io
 ## Key references
 
 Deng et al. (2011) · Kohnfelder and Garg (1999) · NIST SP 800-30 Rev. 1 · OWASP Threat Modeling Cheat Sheet · Schneier (1999) · Shostack (2014) · Threat Modeling Manifesto (2020). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Security principles](02-security-principles.md) · [Index](../00-start-here.md) · [Adversaries and attack frameworks →](04-adversaries-and-attack-frameworks.md)

@@ -161,3 +161,6 @@ These map to [Module 0.4](../../roadmap/phase-0-foundations/04-networking.md) an
 ## Key references
 
 Lyon (2009) · Sanders (2017) · RFC 9293 · Wireshark User's Guide · Zeek documentation · Suricata documentation. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Network defense architecture](04-network-defense-architecture.md) · [Index](../00-start-here.md) · [Cryptography foundations →](../04-cryptography-and-identity/01-cryptography-foundations.md)

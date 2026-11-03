@@ -161,3 +161,6 @@ Reading the table top to bottom shows how many chances the defender had. The ear
 ## Key references
 
 Bianco (2013) · Caltagirone et al. (2013) · Hutchins et al. (2011) · MITRE ATT&CK · MITRE ATT&CK v19 release notes · Pols (2017) · Verizon DBIR. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Threat modeling](03-threat-modeling.md) · [Index](../00-start-here.md) · [Legal limits and ethics →](05-legal-and-ethics.md)

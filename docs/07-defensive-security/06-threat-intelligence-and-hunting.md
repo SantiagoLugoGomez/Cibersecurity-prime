@@ -127,3 +127,6 @@ These support [Module 2.4](../../roadmap/phase-2-guided-practice/04-blue-team-la
 ## Key references
 
 FIRST Traffic Light Protocol · MITRE ATT&CK · OASIS STIX 2.1 and TAXII 2.1 · SANS Hunting Maturity Model · Sqrrl threat hunting reference material. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Digital forensics](05-digital-forensics.md) · [Index](../00-start-here.md) · [Vulnerability and exposure management →](07-vulnerability-and-exposure-management.md)

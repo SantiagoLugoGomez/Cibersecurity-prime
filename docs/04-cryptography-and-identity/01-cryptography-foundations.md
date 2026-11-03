@@ -201,3 +201,6 @@ Prefer libraries that make the safe choice the easy one: **libsodium** (NaCl), G
 ## Key references
 
 FIPS 180-4 · FIPS 197 · FIPS 202 · NIST SP 800-38D · NIST SP 800-57 Part 1 Rev. 5 · OWASP Password Storage Cheat Sheet · RFC 2104 · RFC 5869 · RFC 7914 · RFC 8018 · RFC 8439 · RFC 8452 · RFC 9106 · RFC 9180 · Rogaway (2002) · Stevens et al. (2017) · Vaudenay (2002). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Traffic analysis and scanning](../03-networking/05-traffic-analysis-and-scanning.md) · [Index](../00-start-here.md) · [Public-key cryptography and PKI →](02-public-key-cryptography-and-pki.md)

@@ -173,3 +173,6 @@ These support the [Phase 3 tracks](../../roadmap/phase-3-specialization/README.m
 ## Key references
 
 Debenedetti et al. (2025) · Greshake et al. (2023) · MITRE ATLAS · NIST AI 100-2 E2025 · NIST AI 600-1 · NIST AI RMF 1.0 · OWASP Top 10 for Agentic Applications · OWASP Top 10 for LLM Applications 2025 · Spracklen et al. (2025) · Willison (2025). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Secure development and the software supply chain](06-secure-development-and-supply-chain.md) · [Index](../00-start-here.md) · [Penetration testing methodology →](../06-offensive-security/01-penetration-testing-methodology.md)

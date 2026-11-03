@@ -140,3 +140,6 @@ These support [Module 2.3](../../roadmap/phase-2-guided-practice/03-machines-and
 ## Key references
 
 GTFOBins · HackTricks · LOLBAS · Microsoft security servicing criteria · MITRE ATT&CK · PEASS-ng. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Vulnerabilities and exploitation](03-vulnerabilities-and-exploitation.md) · [Index](../00-start-here.md) · [Active Directory attacks →](05-active-directory-attacks.md)

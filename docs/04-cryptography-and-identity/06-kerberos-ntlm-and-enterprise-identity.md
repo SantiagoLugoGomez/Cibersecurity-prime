@@ -257,3 +257,6 @@ The broader checklist, with the misconfigurations that expose these protocols, i
 ## Key references
 
 Medin (2014) · Microsoft MS-KILE · Microsoft MS-NLMP · Microsoft NTLM and Kerberos hardening notices · MITRE ATT&CK · RFC 3962 · RFC 4120. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Authorization, sessions and federation](05-authorization-sessions-and-federation.md) · [Index](../00-start-here.md) · [The browser security model and security headers →](../05-application-security/01-browser-security-model-and-headers.md)

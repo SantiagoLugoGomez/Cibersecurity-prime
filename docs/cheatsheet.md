@@ -191,3 +191,6 @@ See [Study load modes](11-learning-and-career/03-study-load-modes.md).
 ## Key references
 
 Every section's linked page carries its own Key references line. Full list in [References](15-references.md).
+
+<!-- navigation -->
+[← Reading and resource list](16-resources.md) · [Index](00-start-here.md)

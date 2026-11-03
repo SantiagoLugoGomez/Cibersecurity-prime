@@ -110,3 +110,6 @@ These support [Module 3](../../roadmap/phase-3-specialization/README.md) and the
 ## Key references
 
 AWS, Microsoft and Google shared responsibility documentation · AWS IMDSv2 documentation · Cloud Security Alliance Security Guidance · NIST SP 800-144 and SP 800-145. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Hardening and resilience](../07-defensive-security/08-hardening-and-resilience.md) · [Index](../00-start-here.md) · [Cloud IAM and attack paths →](02-cloud-iam-and-attack-paths.md)

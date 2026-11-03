@@ -83,3 +83,6 @@ These support [the study system](02-the-study-system.md) and the weekly format d
 ## Key references
 
 Bjork and Bjork (2011) · Cepeda et al. (2006) · Craik and Lockhart (1972) · Dunlosky et al. (2013) · Karpicke and Blunt (2011) · Roediger and Karpicke (2006) · Rohrer and Taylor (2007). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Colombian regulatory landscape](../10-governance-risk-and-compliance/05-colombian-regulatory-landscape.md) · [Index](../00-start-here.md) · [The study system →](02-the-study-system.md)

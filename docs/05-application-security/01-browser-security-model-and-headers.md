@@ -176,3 +176,6 @@ These support [Module 1.4](../../roadmap/phase-1-security-fundamentals/04-web-se
 ## Key references
 
 MDN Web Docs · OWASP Secure Headers Project · RFC 6265 · RFC 6454 · RFC 6797 · W3C Content Security Policy · WHATWG Fetch Standard · Weichselbaum et al. (2016) · Zalewski (2011). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Kerberos, NTLM and enterprise identity](../04-cryptography-and-identity/06-kerberos-ntlm-and-enterprise-identity.md) · [Index](../00-start-here.md) · [The OWASP Top 10:2025 →](02-owasp-top-10-2025.md)

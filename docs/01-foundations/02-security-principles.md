@@ -118,3 +118,6 @@ If you can answer all eight for a system, you can produce a useful review of it,
 ## Key references
 
 CISA Secure by Design · Kerckhoffs (1883) · NIST SP 800-63B-4 · NIST SP 800-207 · Saltzer and Schroeder (1975) · Shannon (1949). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← What security is](01-what-security-is.md) · [Index](../00-start-here.md) · [Threat modeling →](03-threat-modeling.md)

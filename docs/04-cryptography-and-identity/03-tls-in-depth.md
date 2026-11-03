@@ -192,3 +192,6 @@ For service-to-service traffic, **mutual TLS (mTLS)** authenticates both ends wi
 ## Key references
 
 Althouse et al. (2017) · Mozilla Server Side TLS · Qualys SSL Labs · RFC 5246 · RFC 8446 · RFC 8996 · RFC 9000 · RFC 9460 · RFC 9849. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Public-key cryptography and PKI](02-public-key-cryptography-and-pki.md) · [Index](../00-start-here.md) · [Passwords and multi-factor authentication →](04-passwords-and-mfa.md)

@@ -116,3 +116,6 @@ A few habits distinguish people who are good at this from people who know a lot 
 ## Key references
 
 Anderson (2020) · Anderson and Moore (2006) · NIST CSF 2.0 · NIST SP 800-30 Rev. 1 · RFC 4949 · Saltzer and Schroeder (1975). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Start here](../00-start-here.md) · [Index](../00-start-here.md) · [Security principles →](02-security-principles.md)

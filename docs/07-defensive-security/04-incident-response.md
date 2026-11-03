@@ -136,3 +136,6 @@ These support [Module 1.5](../../roadmap/phase-1-security-fundamentals/05-networ
 ## Key references
 
 NIST CSF 2.0 · NIST SP 800-61 Revision 3 · SIC guidance on the national database registry (RNBD). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Security operations and the SIEM](03-security-operations-and-siem.md) · [Index](../00-start-here.md) · [Digital forensics →](05-digital-forensics.md)

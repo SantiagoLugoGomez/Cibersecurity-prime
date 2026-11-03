@@ -119,3 +119,6 @@ These support the [GRC track](../../roadmap/phase-3-specialization/track-grc.md)
 ## Key references
 
 AICPA Trust Services Criteria · ISO/IEC 27001:2022 (management review and internal audit requirements) · NIST SP 800-53 (supply chain risk management family). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Frameworks and standards](02-frameworks-and-standards.md) · [Index](../00-start-here.md) · [Privacy and data protection →](04-privacy-and-data-protection.md)

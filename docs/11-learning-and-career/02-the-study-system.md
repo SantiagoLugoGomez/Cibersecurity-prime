@@ -114,3 +114,6 @@ These support the [roadmap's weekly format](../../roadmap/README.md#the-weekly-s
 ## Key references
 
 Dunlosky et al. (2013) · Roediger and Karpicke (2006). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Learning science](01-learning-science.md) · [Index](../00-start-here.md) · [Study load modes →](03-study-load-modes.md)

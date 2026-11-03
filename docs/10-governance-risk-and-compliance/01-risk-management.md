@@ -125,3 +125,6 @@ These support the [GRC track](../../roadmap/phase-3-specialization/track-grc.md)
 ## Key references
 
 ISO 31000 · NIST SP 800-30 Revision 1 · Open FAIR (The Open Group) · NIST SP 800-39. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Reverse engineering basics](../09-malware-and-reverse-engineering/05-reverse-engineering-basics.md) · [Index](../00-start-here.md) · [Frameworks and standards →](02-frameworks-and-standards.md)

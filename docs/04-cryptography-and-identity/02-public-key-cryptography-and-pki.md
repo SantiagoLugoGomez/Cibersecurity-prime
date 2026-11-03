@@ -211,3 +211,6 @@ What to do now:
 ## Key references
 
 CA/Browser Forum SC-081v3 · Diffie and Hellman (1976) · FIPS 203 · FIPS 204 · FIPS 205 · Heninger et al. (2012) · Lenstra et al. (2012) · NIST IR 8547 · RFC 5280 · RFC 6960 · RFC 6962 · RFC 7748 · RFC 7919 · RFC 8032 · RFC 8555 · Rivest, Shamir and Adleman (1978). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Cryptography foundations](01-cryptography-foundations.md) · [Index](../00-start-here.md) · [TLS in depth →](03-tls-in-depth.md)

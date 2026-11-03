@@ -431,3 +431,6 @@ These map to [Module 1.3](../../roadmap/phase-1-security-fundamentals/03-identit
 ## Key references
 
 Hardy (1988) · Krebs (2019) · McLean (2015) · NIST SP 800-162 · OASIS SAML 2.0 · OpenID Connect Core 1.0 · OWASP Authorization Cheat Sheet · OWASP CSRF Prevention Cheat Sheet · OWASP Session Management Cheat Sheet · Pang et al. (2019) · RFC 6749 · RFC 7519 · RFC 7636 · RFC 8725 · RFC 9449 · RFC 9700 · RFC 10017 · Sandhu et al. (1996). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Passwords and multi-factor authentication](04-passwords-and-mfa.md) · [Index](../00-start-here.md) · [Kerberos, NTLM and enterprise identity →](06-kerberos-ntlm-and-enterprise-identity.md)

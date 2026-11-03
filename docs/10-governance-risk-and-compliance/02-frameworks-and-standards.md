@@ -109,3 +109,6 @@ These support the [GRC track](../../roadmap/phase-3-specialization/track-grc.md)
 ## Key references
 
 CIS Controls v8.1 · ISO/IEC 27001:2022 and 27002:2022 · NIST CSF 2.0 · NIST SP 800-53 · PCI DSS 4.0.1 · SOC 2 Trust Services Criteria (AICPA). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Risk management](01-risk-management.md) · [Index](../00-start-here.md) · [Policies, audit and third-party risk →](03-policies-audit-and-third-party-risk.md)

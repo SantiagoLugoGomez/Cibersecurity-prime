@@ -322,3 +322,6 @@
 ## Full citation index, alphabetical by first word
 
 For a quick lookup when a page's "Key references" line uses shortened wording, search this page (browser find, `Ctrl+F` / `Cmd+F`) for the document number (such as `800-63`, `RFC 8446`, `CWE-79`) or the author surname. Every citation used anywhere in `docs/` appears in exactly one of the groups above; none are listed twice under different wording.
+
+<!-- navigation -->
+[← Glossary](14-glossary.md) · [Index](00-start-here.md) · [Reading and resource list →](16-resources.md)

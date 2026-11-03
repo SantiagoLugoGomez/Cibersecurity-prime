@@ -165,3 +165,6 @@ API keys, database passwords, tokens and service-account secrets are the passwor
 ## Key references
 
 Meyer et al. (2023) · NIST SP 800-63B-4 · OWASP Authentication Cheat Sheet · OWASP Password Storage Cheat Sheet · RFC 4226 · RFC 6238 · Verizon DBIR · W3C WebAuthn · Wheeler (2016). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← TLS in depth](03-tls-in-depth.md) · [Index](../00-start-here.md) · [Authorization, sessions and federation →](05-authorization-sessions-and-federation.md)

@@ -187,3 +187,6 @@ In October 2016, the Mirai botnet of compromised cameras and routers flooded the
 ## Key references
 
 Bellovin (1989) · RFC 768 · RFC 792 · RFC 2827 · RFC 3704 · RFC 6480 · RFC 6528 · RFC 6811 · RFC 9293 · US-CERT TA14-017A. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Network models and addressing](01-models-and-addressing.md) · [Index](../00-start-here.md) · [DNS, HTTP and the web stack →](03-dns-http-and-the-web-stack.md)

@@ -112,3 +112,6 @@ These connect every phase of the roadmap back to [the degree you are actually ta
 ## Key references
 
 FIPS 203 · NIST SP 800-63B-4. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Study load modes](03-study-load-modes.md) · [Index](../00-start-here.md) · [Certification strategy →](05-certification-strategy.md)

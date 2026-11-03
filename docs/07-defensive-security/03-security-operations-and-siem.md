@@ -120,3 +120,6 @@ These support [Module 1.5](../../roadmap/phase-1-security-fundamentals/05-networ
 ## Key references
 
 Elastic Security documentation · MITRE ATT&CK · NIST CSF 2.0 · Splunk documentation · Wazuh documentation. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Detection engineering](02-detection-engineering.md) · [Index](../00-start-here.md) · [Incident response →](04-incident-response.md)

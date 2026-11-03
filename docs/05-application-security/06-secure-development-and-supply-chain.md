@@ -202,3 +202,6 @@ These support [Module 1.6](../../roadmap/phase-1-security-fundamentals/06-framew
 ## Key references
 
 Birsan (2021) · CISA et al. (2023) · CycloneDX and SPDX specifications · NIST SP 800-218 · OpenSSF Scorecard · OWASP ASVS 5.0 · OWASP SAMM · Sigstore documentation · SLSA · Spracklen et al. (2025). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← API security](05-api-security.md) · [Index](../00-start-here.md) · [LLM and AI application security →](07-llm-and-ai-application-security.md)

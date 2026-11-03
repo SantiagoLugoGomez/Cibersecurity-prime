@@ -161,3 +161,6 @@ These support [Module 0.4](../../roadmap/phase-0-foundations/04-networking.md), 
 ## Key references
 
 Bazzell (2023) · Lyon (2009) · MITRE ATT&CK · OWASP Web Security Testing Guide · RFC 6962 · SecLists. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Penetration testing methodology](01-penetration-testing-methodology.md) · [Index](../00-start-here.md) · [Vulnerabilities and exploitation →](03-vulnerabilities-and-exploitation.md)

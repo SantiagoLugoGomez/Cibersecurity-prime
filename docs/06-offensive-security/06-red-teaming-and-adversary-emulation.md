@@ -105,3 +105,6 @@ These map to [Module 2.4](../../roadmap/phase-2-guided-practice/04-blue-team-lab
 ## Key references
 
 Atomic Red Team documentation · MITRE ATT&CK · MITRE ATT&CK Navigator · MITRE Caldera documentation · Red Canary resources. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Active Directory attacks](05-active-directory-attacks.md) · [Index](../00-start-here.md) · [Logging and telemetry →](../07-defensive-security/01-logging-and-telemetry.md)

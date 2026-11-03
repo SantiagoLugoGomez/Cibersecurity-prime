@@ -200,3 +200,6 @@ route print
 ## Key references
 
 Bellovin (1989) · RFC 826 · RFC 1918 · RFC 3021 · RFC 4291 · RFC 4632 · RFC 5737 · RFC 6598 · RFC 8200. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Memory, corruption bugs and exploit mitigations](../02-systems/04-memory-and-exploit-mitigations.md) · [Index](../00-start-here.md) · [TCP, UDP, ICMP and routing →](02-tcp-udp-and-routing.md)

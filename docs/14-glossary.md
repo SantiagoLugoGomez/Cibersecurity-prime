@@ -563,3 +563,6 @@ Entries are alphabetical. A term defined fully on its own linked page is kept sh
 ## Key references
 
 Every linked page's own Key references line. Full list in [References](15-references.md).
+
+<!-- navigation -->
+[← Common myths](13-myths.md) · [Index](00-start-here.md) · [References →](15-references.md)

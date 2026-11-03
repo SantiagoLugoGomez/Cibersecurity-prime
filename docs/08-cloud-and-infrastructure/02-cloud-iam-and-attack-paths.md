@@ -86,3 +86,6 @@ These support [Module 3](../../roadmap/phase-3-specialization/README.md) and the
 ## Key references
 
 AWS, Azure and Google Cloud IAM documentation · Cloud Security Alliance Security Guidance · NIST SP 800-210. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Cloud security fundamentals](01-cloud-security-fundamentals.md) · [Index](../00-start-here.md) · [Containers, Kubernetes and infrastructure as code →](03-containers-kubernetes-and-iac.md)

@@ -145,3 +145,6 @@ These support [Module 1.5](../../roadmap/phase-1-security-fundamentals/05-networ
 ## Key references
 
 MITRE ATT&CK · NIST SP 800-92 and draft Revision 1 · OCSF (Open Cybersecurity Schema Framework) · OWASP Logging Cheat Sheet · PCI DSS 4.0.1. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Red teaming and adversary emulation](../06-offensive-security/06-red-teaming-and-adversary-emulation.md) · [Index](../00-start-here.md) · [Detection engineering →](02-detection-engineering.md)

@@ -129,3 +129,6 @@ These support the [roadmap's phase structure](../../roadmap/README.md) and [the 
 ## Key references
 
 Dunlosky et al. (2013) · Cepeda et al. (2006). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← The study system](02-the-study-system.md) · [Index](../00-start-here.md) · [Your degree and security →](04-your-degree-and-security.md)

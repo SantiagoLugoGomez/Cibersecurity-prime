@@ -118,3 +118,6 @@ These support [Module 1.5](../../roadmap/phase-1-security-fundamentals/05-networ
 ## Key references
 
 CIS Benchmarks and CIS Controls · CISA ransomware readiness guidance · NIST SP 800-34 (contingency planning). Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Vulnerability and exposure management](07-vulnerability-and-exposure-management.md) · [Index](../00-start-here.md) · [Cloud security fundamentals →](../08-cloud-and-infrastructure/01-cloud-security-fundamentals.md)

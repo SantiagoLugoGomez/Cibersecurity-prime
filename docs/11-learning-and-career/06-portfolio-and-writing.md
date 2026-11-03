@@ -79,4 +79,7 @@ These support [Module 4 of the roadmap](../../roadmap/phase-4-professional/READM
 
 ## Key references
 
-The writeup template and English writing guidance already referenced throughout this page. Full list in [References](../15-references.md).
+OWASP Web Security Testing Guide (report-writing appendix) · SANS report-writing guidance. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Certification strategy](05-certification-strategy.md) · [Index](../00-start-here.md) · [Community →](07-community.md)

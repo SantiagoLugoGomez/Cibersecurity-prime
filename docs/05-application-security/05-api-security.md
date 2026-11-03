@@ -210,3 +210,6 @@ These support [Module 1.4](../../roadmap/phase-1-security-fundamentals/04-web-se
 ## Key references
 
 OWASP API Security Top 10 (2023) · OWASP GraphQL Cheat Sheet · OWASP REST Security Cheat Sheet · OpenAPI Specification · PortSwigger Web Security Academy · RFC 9457. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Access control, SSRF and logic flaws](04-access-control-ssrf-and-logic-flaws.md) · [Index](../00-start-here.md) · [Secure development and the software supply chain →](06-secure-development-and-supply-chain.md)

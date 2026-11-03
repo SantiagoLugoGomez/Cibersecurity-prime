@@ -286,3 +286,6 @@ Then run **Autoruns** and **Process Explorer** (Sysinternals) for a visual view 
 ## Key references
 
 CIS Benchmarks · LOLBAS Project · Microsoft Learn: Sysmon · Microsoft Learn: Windows security · Microsoft Security Baselines · MITRE ATT&CK · SwiftOnSecurity sysmon-config. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Linux for security](01-linux-for-security.md) · [Index](../00-start-here.md) · [Active Directory →](03-active-directory.md)

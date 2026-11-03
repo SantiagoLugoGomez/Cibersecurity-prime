@@ -133,3 +133,6 @@ These support [Module 2.4](../../roadmap/phase-2-guided-practice/04-blue-team-la
 ## Key references
 
 Carrier (2005) · NIST SP 800-61 Revision 3 · SANS digital forensics posters and course material · Volatility Foundation documentation. Full list in [References](../15-references.md).
+
+<!-- navigation -->
+[← Incident response](04-incident-response.md) · [Index](../00-start-here.md) · [Threat intelligence and hunting →](06-threat-intelligence-and-hunting.md)
