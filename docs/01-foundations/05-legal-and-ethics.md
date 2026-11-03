@@ -1,92 +1,179 @@
 # Legal limits and ethics
 
-Read this before you touch any system you do not own. The skills in this roadmap are the same whether they are used to defend or to attack; the law and your ethics are what separate a security professional from a criminal. In Colombia, computer crimes carry real prison sentences, and being a student is not a defense.
+> [!TIP]
+> **In short:** test only what you **own** or what someone with the authority to grant it has authorized **in writing**, and stay inside the **scope** of that permission. In Colombia, Ley 1273 de 2009 punishes access "without authorization or outside what was agreed", with prison terms of 48 to 96 months for the basic offense, and being a student or having good intentions is not a defense. Practice in your own lab and on platforms built for it; report anything you find through the proper channel.
 
-This page is a practical summary for a student practitioner. It is not legal advice. When in doubt, do not act, and consult a qualified lawyer.
+> [!WARNING]
+> This page is a practical summary for a student practitioner. It is not legal advice and it can be out of date. When a situation is unclear, stop and ask a qualified lawyer before acting.
 
 ## The one rule that keeps you safe
 
-**Only test systems you own or have explicit, written authorization to test.**
+**Only test systems you own, or have explicit written authorization to test, and only within the agreed scope.**
 
-Everything else follows from this. Your home lab, deliberately vulnerable apps you host yourself, and platforms that authorize testing (TryHackMe, Hack The Box, picoCTF, OverTheWire, bug bounty targets within their stated scope) are all fine. A website, app, network or device that does not fall in one of those categories is off limits, no matter how easy the vulnerability looks or how good your intentions are.
+Everything else follows from it. Your home lab, vulnerable applications you host yourself, and platforms that invite testing (TryHackMe, Hack The Box, picoCTF, OverTheWire, and bug bounty targets inside their stated scope) are fine. A website, app, network or device that does not fall into one of those groups is off limits, however easy the flaw looks and however good your intentions are.
 
-"I was just looking" and "I didn't change anything" are not defenses under Colombian law. Unauthorized access is itself the crime.
+"I was just looking" and "I didn't change anything" do not work as defenses. The unauthorized access is itself the offense.
 
 ## Colombian law
 
 ### Ley 1273 de 2009: computer crimes
 
-Ley 1273 de 2009 added a chapter titled "protection of information and data" to the Penal Code (Código Penal, Ley 599 de 2000). It defines distinct computer crimes, each with prison terms stated in months and fines in current monthly minimum wages (salarios mínimos mensuales legales vigentes, SMMLV). Official text: [Secretaría del Senado](http://www.secretariasenado.gov.co/senado/basedoc/ley_1273_2009.html) and [Función Pública](https://www.funcionpublica.gov.co/eva/gestornormativo/norma_pdf.php?i=34492).
+Ley 1273 de 2009 added a title called *De la protección de la información y de los datos* to the Penal Code (Ley 599 de 2000). It defines separate offenses, with prison terms in months and fines in monthly minimum wages (SMMLV). Official texts: [Secretaría del Senado](http://www.secretariasenado.gov.co/senado/basedoc/ley_1273_2009.html) and [Función Pública](https://www.funcionpublica.gov.co/eva/gestornormativo/norma_pdf.php?i=34492). **●●●**
 
-| Article | Conduct | Penalty |
+| Article | Offense | Penalty |
 |---|---|---|
-| 269A | Abusive access to a computer system (accessing without authorization, or staying against the owner's will) | 48 to 96 months prison, 100 to 1000 SMMLV fine |
-| 269B | Illegitimate obstruction of a system or network | 48 to 96 months, 100 to 1000 SMMLV |
+| **269A** | Abusive access to a computer system | 48 to 96 months of prison, fine of 100 to 1,000 SMMLV |
+| 269B | Illegitimate obstruction of a system or network | 48 to 96 months, 100 to 1,000 SMMLV |
 | 269C | Interception of computer data without a court order | 36 to 72 months |
-| 269D | Computer damage (destroy, damage, delete, alter data) | 48 to 96 months, 100 to 1000 SMMLV |
-| 269E | Use of malicious software (produce, traffic, acquire, distribute, sell, send, introduce malware) | 48 to 96 months, 100 to 1000 SMMLV |
-| 269F | Violation of personal data (obtain, compile, sell, send, buy, divulge personal data for gain, without authorization) | 48 to 96 months, 100 to 1000 SMMLV |
-| 269G | Website spoofing to capture personal data (phishing pages, malicious links and pop-ups) | 48 to 96 months, 100 to 1000 SMMLV |
-| 269H | Aggravating circumstances | Penalties above increase by one-half to three-quarters |
+| 269D | Computer damage (destroying, damaging, deleting or altering data) | 48 to 96 months, 100 to 1,000 SMMLV |
+| 269E | Use of malicious software (producing, trafficking, acquiring, distributing, selling, sending or introducing it) | 48 to 96 months, 100 to 1,000 SMMLV |
+| 269F | Violation of personal data (obtaining, compiling, selling or disclosing it without authorization, for gain) | 48 to 96 months, 100 to 1,000 SMMLV |
+| 269G | Impersonation of websites to capture personal data (phishing pages, malicious links, pop-ups) | 48 to 96 months, 100 to 1,000 SMMLV |
+| 269H | Aggravating circumstances | Penalties increase by one half to three quarters |
 | 269I | Theft by computer means | Penalties of theft (art. 240 of the Penal Code) |
-| 269J | Non-consensual transfer of assets (computer fraud) | 48 to 120 months, 200 to 1500 SMMLV |
+| 269J | Non-consensual transfer of assets | 48 to 120 months, 200 to 1,500 SMMLV |
 
-The aggravating circumstances in 269H raise the penalty when, among other things, the conduct targets state or official systems or the financial sector, is committed by someone abusing a position of trust, or uses another person as an unwitting tool. Several of these articles apply directly to exactly the techniques you learn in this roadmap: a port scan plus login attempt against a system you were not authorized to test can be abusive access (269A); running malware outside an isolated lab can implicate 269E; a phishing page built "for practice" against a real site can be 269G.
+Aggravating circumstances (269H) apply, among other cases, when the conduct targets official or state systems or the financial sector, or is committed by someone abusing a position of trust.
 
-Colombia also approved the Council of Europe Convention on Cybercrime (the Budapest Convention) through **Ley 1928 de 2018**, upheld by the Constitutional Court in judgment C-224 of 2019. This strengthens international cooperation, which means cross-border "practice" against foreign systems is not a way around the law.
+### Reading article 269A closely
 
-### Ley 1581 de 2012: personal data protection
+Article 269A is the one that matters most for anyone who tests systems. In substance, it punishes whoever, **"sin autorización o por fuera de lo acordado"** (without authorization or outside what was agreed), accesses all or part of a computer system, *protected by a security measure or not*, or **stays inside it against the will of whoever has the legitimate right to exclude them**. The quoted phrase is the statute's own wording; read the full article in the linked official sources.
 
-Ley 1581 de 2012 is Colombia's general personal data protection law. It is enforced by the Superintendencia de Industria y Comercio (SIC). Official text: [SUIN-Juriscol](https://www.suin-juriscol.gov.co/viewDocument.asp?ruta=Leyes/1684507) and [Secretaría del Senado](http://www.secretariasenado.gov.co/senado/basedoc/ley_1581_2012.html); its main regulation is Decreto 1377 de 2013.
+Four consequences are worth stating plainly.
 
-What matters for a security practitioner:
+1. **Authorization is the dividing line.** The same scan, login attempt or exploit is lawful with permission and a crime without it.
+2. **"Outside what was agreed" covers scope creep.** A tester who has permission for one web application and also probes the server next to it can fall outside the agreement. Scope is not paperwork; it is the legal boundary of your work.
+3. **No security measure needs to be bypassed.** An open door is still not an invitation. Reaching something because it was left unprotected does not make the access authorized.
+4. **Staying counts.** If you were allowed in but were told to leave, or your permission ended, remaining is covered.
 
-- **Consent and purpose.** Personal data may be processed only with the owner's prior, informed consent and only for the stated purpose. If you capture personal data during testing (a database dump, logs with real users), you are now handling regulated data.
-- **Security principle (art. 4 g).** Those who process personal data must apply the technical, human and administrative measures needed to protect records against adulteration, loss, unauthorized or fraudulent access or use. Weak security is not only bad practice; it can be a breach of this duty.
-- **Duty to report (art. 17 k).** Data controllers must inform the SIC when security codes are violated and there are risks in managing the owners' information. Breach handling is a legal obligation, not only a technical one.
-- **Penalties (art. 23).** The SIC can impose fines of up to **2,000 SMMLV** per violation, and the fines can be repeated while the non-compliance continues. These sanctions apply to private parties.
+The offense is committed with intent (*dolo*), but do not treat that as a defense. Running a tool against a target on purpose is intentional access. Ignorance of the scope or a wish to "help" does not change that.
 
-Sensitive data (health, biometrics, political views and similar) and children's data have stronger protection. A breach that exposes personal data can trigger both Ley 1273 (the crime) and Ley 1581 (regulatory sanctions and the duty to notify).
+**Practical implication:** if you cannot point to a written permission that covers this system, this action and this time window, do not do it.
 
-### Where to report
+### Other offenses that touch your practice
 
-- **Report a crime:** the Policía Nacional's cybercrime unit (Centro Cibernético Policial) receives citizen reports; serious cases go to the Fiscalía General de la Nación.
-- **Report a data incident or complaint:** the SIC, as the data protection authority.
-- **National incident coordination:** ColCERT, under the Ministry of Information and Communications Technologies (MinTIC), coordinates response to cyber incidents at the national level.
-
-Confirm the current reporting channels on the official sites, since government portals change.
-
-## Practicing legally
-
-| Allowed without extra permission | Never without explicit written authorization |
+| Activity | Risk |
 |---|---|
-| Your own home lab and VMs | Any website, app or API you do not own |
-| Juice Shop, DVWA and other apps you host yourself | Your university's systems, including the Wi-Fi and the portal |
-| TryHackMe, Hack The Box, picoCTF, OverTheWire and similar platforms | A friend's or employer's systems "to help" |
-| CTF competitions you entered | Any government, bank or company system |
-| Bug bounty targets, strictly within the published scope | A device or network you connected to but do not control |
+| Scanning or brute-forcing a system you do not control | 269A; if it disrupts service, 269B |
+| Capturing traffic on a network you do not own or administer | 269C |
+| Running or sharing malware outside an isolated lab, or distributing samples | 269E (the verbs include *traffic*, *distribute* and *send*) |
+| Building a phishing page, even "for a demo", against a real brand | 269G |
+| Keeping or sharing personal data obtained in a test | 269F, plus data protection law |
+| Impersonating someone with a synthetic voice or video | Ley 2502 de 2025 adds an aggravating circumstance when artificial intelligence is used in identity impersonation **●●○** |
 
-Testing a classmate's project, scanning the campus network, or "checking" a company's site are all unauthorized access, even with good intentions.
+### Related laws
 
-## Responsible disclosure and bug bounty
+- **Ley 1928 de 2018** approved the Budapest Convention on Cybercrime, and the Constitutional Court upheld it in judgment C-224 of 2019. International cooperation means that practising "abroad" on systems in other countries does not avoid liability; their laws apply too.
+- **Ley 1581 de 2012** (personal data protection) and **Ley 1266 de 2008** (financial and credit data) govern what you may do with personal data you handle. See [Privacy and data protection](../10-governance-risk-and-compliance/04-privacy-and-data-protection.md) and [Colombian regulatory landscape](../10-governance-risk-and-compliance/05-colombian-regulatory-landscape.md).
 
-If you find a vulnerability in a system you were not authorized to test, you are in a difficult legal position: finding it may already have required unauthorized access. The safe path is to practice only where you are authorized, so you never get there.
+### Other countries
 
-When you are authorized (your own systems, or a program that invites testing), responsible disclosure is the professional standard:
+When you touch a system abroad, the law of that country can apply. The United States has the Computer Fraud and Abuse Act, the United Kingdom the Computer Misuse Act 1990, and the European Union a directive on attacks against information systems (Directive 2013/40/EU). In May 2022 the US Department of Justice announced that it would generally not prosecute good-faith security research under the CFAA (US DOJ CFAA policy, 2022). **●●○** That is a prosecutorial policy for one country. It is not a license, it does not bind other states or private plaintiffs, and it does not apply to Colombian law. Do not read it as a safe harbor for you.
 
-1. **Confirm you are in scope.** Read the program policy or the organization's `security.txt` file before testing. [RFC 9116](https://www.rfc-editor.org/rfc/rfc9116) defines `security.txt`, a file at `/.well-known/security.txt` where organizations publish how to report vulnerabilities.
-2. **Report privately first.** Send a clear report to the vendor or program: affected asset, impact, reproducible steps, evidence, and a suggested fix. Use the [report-writing guidance](../../english/writing-reports.md).
-3. **Do no harm.** Do not access more data than needed to prove the issue, do not run denial-of-service, do not pivot to other systems, and delete any data you had to retrieve.
-4. **Give time to fix.** Coordinate a disclosure timeline. Public disclosure happens only with agreement, usually after a patch.
-5. **Stay inside the rules.** A program's safe harbor protects you only while you follow its policy. Step outside the scope and that protection is gone.
+## Authorization in practice
 
-The [CERT Guide to Coordinated Vulnerability Disclosure](https://vuls.cert.org/confluence/display/CVD) is the standard reference for how this process works. How bug bounty programs operate in practice is covered in [Phase 4](../../roadmap/phase-4-professional/README.md#bug-bounty).
+For paid work, authorization is a document, usually part of the contract and the rules of engagement. A useful one answers the following.
+
+| Item | What it should say |
+|---|---|
+| **Who authorizes** | Name and role of someone with the authority to grant access to these systems |
+| **Scope** | Exact targets: IP ranges, domains, applications, cloud accounts, physical locations |
+| **Out of scope** | Systems and actions explicitly excluded (production databases, third-party services, other tenants) |
+| **Techniques** | Allowed and forbidden methods (denial of service, social engineering, phishing, physical entry) |
+| **Window** | Dates and times, and contact points during the test |
+| **Data handling** | What you may access, how evidence is stored and encrypted, when it is destroyed |
+| **Safety** | An emergency contact and a way to stop the test immediately |
+| **Third parties** | Cloud and hosting providers may have their own testing policies; check them |
+| **Liability** | Responsibilities if something breaks |
+
+Treat the scope as a hard limit. If you discover a path to something outside it, stop, record what you saw, and ask the client; do not "just check".
+
+## Gray areas, answered cautiously
+
+These come up constantly. The answers are conservative on purpose (◇).
+
+| Situation | Conservative answer |
+|---|---|
+| Scan my university's network or Wi-Fi to learn | No. Ask the IT department in writing; many will say no, some will help set up a lab |
+| Port-scan a public website "just to see" | Treat as unauthorized. Scanning is also against many ISPs' terms |
+| Use Shodan, Censys or certificate search | Searching an index built by someone else is passive and fine; connecting to what you find is not |
+| Test my own account on a service for weak spots | Normal use is fine; automated attacks, fuzzing or probing others' data is not, and may violate the terms of service |
+| Download malware samples to analyze | Possession for analysis is common practice; do it only in an isolated lab and never distribute (269E) |
+| I found a vulnerability while using a site normally | Stop, do not go further, and report it (see below) |
+| A friend asks me to "check" their company's site | Not without written permission from someone who can authorize it |
+| Join a bug bounty program | Yes, and stay strictly inside its published scope and rules |
+
+## Platforms and competitions
+
+Platforms are authorized environments, but they have rules too.
+
+- Attack only the machines and challenges assigned to you; never the platform infrastructure or other players.
+- Do not share flags or solutions for live competitions or active content. Hack The Box permits public writeups only for retired content, so keep notes on active machines private.
+- Do not scan shared lab networks beyond your assigned range.
+- Respect rate limits and fair use on free tiers.
+
+## Responsible disclosure
+
+When you find a vulnerability, how you report it matters as much as the finding.
+
+| Model | Idea |
+|---|---|
+| **Coordinated (responsible) disclosure** | Report privately; the vendor fixes; details are published after a fix or an agreed deadline. This is the professional norm, and the process is formalized in ISO/IEC 29147 (disclosure) and ISO/IEC 30111 (handling) **●●●** |
+| **Full disclosure** | Publish details immediately so everyone can act. Rare and controversial; carries legal and ethical risk |
+| **Non-disclosure** | Keep it to yourself or sell it. Selling to exploit brokers or criminals is unethical, and may be illegal |
+
+Deadlines are a negotiation. A 90-day window is common in industry (Google Project Zero popularized it), with flexibility if the vendor is working on a fix. **●●○**
+
+### If you stumble on something
+
+1. **Stop** as soon as you realize the system is not yours or the access is unintended.
+2. **Do not go further.** No pivoting, no browsing records, no "proof" beyond the minimum.
+3. **Record** what you did and saw, with timestamps, for your own protection.
+4. **Do not keep data.** If you already retrieved any, secure it and delete it once reported.
+5. **Find the reporting channel.** Look for a published policy or a `security.txt` file (RFC 9116 defines `/.well-known/security.txt`). Otherwise contact the organization's security or IT team.
+6. **Report factually** and offer help; never demand payment. An unsolicited request for money can be read as extortion.
+7. **Consider a coordinator.** In Colombia, ColCERT (under MinTIC) coordinates response to cyber incidents, and national CERTs in other countries do the same. The CERT/CC *Guide to Coordinated Vulnerability Disclosure* describes the process in detail.
+
+### Bug bounty programs
+
+A program's policy is your authorization. Read it fully before sending a request: scope, forbidden actions (denial of service, social engineering, data access beyond proof), required reporting format, rules on disclosure and payment. Safe-harbor language in a policy is a contractual promise from the company; it is only as strong as the company and does not bind prosecutors. Outside the scope you have no cover at all. More on how programs work is in the [professional phase of the roadmap](../../roadmap/phase-4-professional/README.md#bug-bounty).
+
+## Handling the data you meet
+
+Testing often exposes personal or confidential data. Handle it as a custodian.
+
+- Collect the minimum needed to prove the issue; screenshots with redactions are enough.
+- Store evidence encrypted, with access limited to those who need it, and delete it at the agreed time.
+- Redact personal data and secrets in reports, writeups and screenshots before sharing.
+- Never publish credentials, tokens or customer data, even from a lab you built using real-looking data.
+
+## Reporting a crime or an incident in Colombia
+
+- **Report a crime:** the Policía Nacional receives complaints about computer crimes through its cyber channels, and serious cases go to the Fiscalía General de la Nación.
+- **Report a personal-data incident or complaint:** the Superintendencia de Industria y Comercio (SIC), the data protection authority.
+- **Coordination of cyber incidents:** ColCERT, part of MinTIC.
+
+Channels and portals change; confirm them on the official sites.
 
 ## A short ethical code
 
-- Get authorization in writing, and stay inside its scope.
+Professional bodies publish codes of ethics, such as the ISC2 Code of Ethics (protect society and the common good, act honorably, provide diligent service, advance the profession) and the ACM Code of Ethics. They agree on the same basics.
+
+- Get authorization in writing and stay inside it.
 - Protect the data and systems you touch as if they were your own.
-- Report what you find honestly, including your mistakes.
-- Do not use your skills to harm, intimidate or spy on anyone.
-- If an action would embarrass you if it were public, do not do it.
+- Report honestly, including your own mistakes.
+- Do not use your skills to harm, intimidate or surveil anyone.
+- If an action would embarrass you when made public, do not do it.
 - When unsure whether something is legal or ethical, stop and ask first.
+
+## What to do with this
+
+- [ ] Read the full text of articles 269A to 269J in the official source.
+- [ ] Write a one-page rules-of-engagement template for your own lab exercises, using the table above.
+- [ ] Check the terms of every platform you use: what is allowed, what you may publish.
+- [ ] Find the `security.txt` of three websites and read their reporting rules.
+- [ ] Keep notes about active content in your private repository, never in the public one.
+
+## Key references
+
+ACM Code of Ethics · CERT Guide to CVD · ISC2 Code of Ethics · ISO/IEC 29147 · ISO/IEC 30111 · Ley 1273 de 2009 · Ley 1581 de 2012 · Ley 1928 de 2018 · Ley 2502 de 2025 · RFC 9116 · Sentencia C-224 de 2019 · US DOJ CFAA policy (2022). Full list in [References](../15-references.md).
