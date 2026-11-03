@@ -1,10 +1,10 @@
 # Phase 3: Specialization
 
-**Duration:** 20 weeks: 12 weeks sampling six tracks (2 weeks each), then 8 weeks going deeper in the one you choose.
+**Duration:** 24 weeks: 12 weeks sampling six tracks (2 weeks each), then 12 weeks going deeper in the one you choose.
 **When:** Semesters 5 and 6, with one break used for the deep dive.
 **Prerequisites:** Phase 2 complete.
 
-Nobody is hired as "cybersecurity". People are hired as SOC analysts, penetration testers, application security engineers, cloud security engineers, GRC analysts. This phase gives you enough direct experience with each track to choose based on what you enjoy doing for hours, not on what sounds impressive.
+Nobody is hired as "cybersecurity". People are hired as SOC analysts, penetration testers, application security engineers, cloud security engineers, GRC analysts. This phase gives you enough direct experience with each track to choose based on what you enjoy doing for hours, not on what sounds impressive. Each track's deep reference lives in `docs/`: [06-offensive-security](../../docs/06-offensive-security/01-penetration-testing-methodology.md), [07-defensive-security](../../docs/07-defensive-security/01-logging-and-telemetry.md), [05-application-security](../../docs/05-application-security/01-browser-security-model-and-headers.md) for web, [09-malware-and-reverse-engineering](../../docs/09-malware-and-reverse-engineering/01-malware-landscape.md), [08-cloud-and-infrastructure](../../docs/08-cloud-and-infrastructure/01-cloud-security-fundamentals.md), and [10-governance-risk-and-compliance](../../docs/10-governance-risk-and-compliance/01-risk-management.md) for GRC.
 
 ## Objectives
 

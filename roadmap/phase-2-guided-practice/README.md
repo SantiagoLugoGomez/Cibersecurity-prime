@@ -4,7 +4,7 @@
 **When:** Semesters 3 and 4, with one break used to accelerate.
 **Prerequisites:** Phase 0 complete; Phase 1 at least through the web module.
 
-Practice turns knowledge into skill. This phase uses platforms where the targets are legal, scoped and built to teach, and builds the habit that separates professionals from hobbyists: documenting every solve to a standard someone else could follow. Each module is a separate file with the full week-by-week plan.
+Practice turns knowledge into skill. This phase uses platforms where the targets are legal, scoped and built to teach, and builds the habit that separates professionals from hobbyists: documenting every solve to a standard someone else could follow. Each module is a separate file with the full week-by-week plan. The methodology behind it lives in [docs/06-offensive-security](../../docs/06-offensive-security/01-penetration-testing-methodology.md) and [docs/07-defensive-security](../../docs/07-defensive-security/01-logging-and-telemetry.md).
 
 ## Modules
 

@@ -6,7 +6,7 @@
 
 Every later phase assumes you can work in a terminal, read a packet capture, write a script and explain what the operating system is doing. This is the longest foundational phase on purpose: weak foundations show up later as slow, frustrating progress on everything else.
 
-Each module below is a separate file with the full week-by-week plan (R/P/D/E sessions, check-yourself questions and a deliverable per week). Read [the roadmap overview](../README.md) first for how the sessions work.
+Each module below is a separate file with the full week-by-week plan (R/P/D/E sessions, check-yourself questions and a deliverable per week). Read [the roadmap overview](../README.md) first for how the sessions work. The matching depth and evidence behind this phase live in [docs/02-systems](../../docs/02-systems/01-linux-for-security.md) and [docs/03-networking](../../docs/03-networking/01-models-and-addressing.md).
 
 ## Modules
 

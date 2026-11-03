@@ -6,7 +6,7 @@
 
 This phase is about evidence: certifications that prove practical skill, projects that show you can build and investigate real systems, bug bounty or CTF results, and a visible presence in the community. Employers in Colombia and abroad hire on that evidence.
 
-Your [Phase 3 track deep dive](../phase-3-specialization/README.md#deep-dive-12-weeks) already prepared you for your track's certification and produced your capstone project. This phase is where you sit the exam, build more projects, and run the job search. The full job-search guide, CV and LinkedIn advice, and interview preparation are in [career.md](career.md).
+Your [Phase 3 track deep dive](../phase-3-specialization/README.md#deep-dive-12-weeks) already prepared you for your track's certification and produced your capstone project. This phase is where you sit the exam, build more projects, and run the job search. The full job-search guide, CV and LinkedIn advice, and interview preparation are in [career.md](career.md). The strategy behind certifications and the portfolio is in [docs/11-learning-and-career](../../docs/11-learning-and-career/05-certification-strategy.md).
 
 ## Objectives
 

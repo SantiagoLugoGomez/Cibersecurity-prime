@@ -4,7 +4,7 @@
 **When:** Alongside the Fundamentals of Cybersecurity course and into the next semester. Phase 0 labs can continue in parallel.
 **Prerequisites:** Phase 0 networking, Linux and Python modules.
 
-This phase turns vocabulary into understanding. The goal is not to memorize definitions but to reason about a system: what it protects, how it fails, and which control would have stopped the failure. Each module is a separate file with the full week-by-week plan.
+This phase turns vocabulary into understanding. The goal is not to memorize definitions but to reason about a system: what it protects, how it fails, and which control would have stopped the failure. Each module is a separate file with the full week-by-week plan. The full depth and evidence behind it live in [docs/01-foundations](../../docs/01-foundations/01-what-security-is.md), [docs/04-cryptography-and-identity](../../docs/04-cryptography-and-identity/01-cryptography-foundations.md), [docs/05-application-security](../../docs/05-application-security/01-browser-security-model-and-headers.md) and [docs/10-governance-risk-and-compliance](../../docs/10-governance-risk-and-compliance/01-risk-management.md).
 
 ## Modules
 
