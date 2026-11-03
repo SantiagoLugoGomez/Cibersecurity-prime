@@ -20,7 +20,7 @@ jobs:
             --timeout 40
             --max-retries 2
             --retry-wait-time 5
-            --accept 200,206,403,429
+            --accept 200,202,206,403,429
             --exclude-path private
             --exclude '^http://10\.'
             --exclude 'example\.com'
